@@ -113,13 +113,13 @@
 
   </head>
   <body>
-    <nav id="navbar-example2" class="navbar navbar-light bg-light justify-content-center fixed-top">
+    <nav id="navbar-example2" class="navbar navbar-light bg-transparent justify-content-center fixed-top">
       <ul class="nav nav-pills">
         <li class="nav-item">
           <a class="nav-link" href="#About">About</a>
         </li>
-        <li class="nav-item d-none d-lg-block">
-          <a class="nav-link" href="#Experience">Experience</a>
+        <li class="nav-item d-none d-sm-block">
+          <a class="nav-link  d-none d-sm-block" href="#Experience">Experience</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#Portfolio">Portfolio</a>
@@ -486,7 +486,7 @@
 
       
       $(window).scroll(function() {
-        if (($(document).scrollTop() < 200) && ( $(window).width() > 576)) {
+        if ($(document).scrollTop() < 200)  {
           $('nav').addClass('bg-transparent');
         } else {
           $('nav').removeClass('bg-transparent');
