@@ -1,0 +1,58 @@
+/* this is a custom sytlesheet */
+
+
+footer{
+	padding:2em 0;
+	margin: 3em 0;
+	border-top: 1px solid #ddd;
+	color: #999;
+	text-align:center;
+}
+
+p{
+	font-family: 'Vollkorn', serif;
+	font-size:1.2em;
+}
+
+nav{
+	font-family: 'Vollkorn', serif;
+	font-size: 1.5em;
+	color:#fff;
+}
+
+
+.carousel-inner{
+  margin: auto;	
+  width:100%;
+  font-family: 'Cinzel', serif;
+  color:#555 !important;
+  
+}
+
+
+.carouselimage{
+	width:70%;
+
+	 max-height: 25em !important;
+}
+
+
+
+#container1{
+	border: 1px solid #ddd;
+	padding: 2em;
+}
+
+.navbar{
+	padding: 0em;
+	margin: 0;
+}
+
+.row{
+padding:1em;
+}
+
+.pull-right.img-responsive{
+	margin: 0 0 1em 1em;
+}
+

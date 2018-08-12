@@ -1,0 +1,112 @@
+  <!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">   
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"> 
+        <link href="css/custom.css" rel="stylesheet"> 
+ 
+</head>
+
+<body>
+  <div class="container" id="container1">
+  <form role="form" class="form-horizontal" action="register.php" method="POST">
+    <fieldset>
+      <div id="legend">
+        <legend class="text-center">Register</legend>
+      </div>
+      <div class="control-group">
+        <!-- First Name -->
+        <label class="control-label"  for="firstname">First Name</label>
+        <div class="controls">
+          <input type="text" id="firstname" name="firstname" pattern="^[a-zA-Z]+$" title="Please enter a valid first name" placeholder="Kwame" class="input-xlarge form-control" required="">
+         
+        </div>
+      </div>
+
+      <div class="control-group">
+        <!-- Last Name -->
+        <label class="control-label"  for="lastname">Last Name</label>
+        <div class="controls">
+          <input type="text" id="lastname" name="lastname" pattern="^[a-zA-Z]+$" title="Please enter a valid last name" placeholder="Abenkwa" class="input-xlarge form-control" required>
+         
+        </div>
+      </div>
+
+      <div class="control-group">
+        <!-- Telephone Number -->
+        <label class="control-label"  for="telephonenum">Telephone Number</label>
+        <div class="controls">
+          <input type="tel" id="telephonenum" name="telephonenum" pattern="[0]{1}[0-9]{9}" title="Please enter a valid telephone number" placeholder="0244555777" class="input-xlarge form-control" required maxlength="10">
+         
+        </div>
+      </div>
+   
+      <div class="control-group">
+        <!-- E-mail -->
+        <label class="control-label" for="email">E-mail</label>
+        <div class="controls">
+          <input type="email" id="email" name="email" placeholder="delah@yahoo.com" class="input-xlarge form-control" required>
+        
+        </div>
+      </div>
+   
+      <div class="control-group">
+        <!-- Password-->
+        <label class="control-label" for="password">Password</label>
+        <div class="controls">
+          <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" placeholder="at least 6 characters, one number, one uppercase letter and one lowercase letter" title="Password must have at least 6 characters, one number, one uppercase letter and one lowercase letter" class="input-xlarge form-control" required>
+        
+        </div>
+      </div>
+   
+      <div class="control-group">
+        <!-- Confirm Password -->
+        <label class="control-label"  for="password_confirm">Confirm password</label>
+        <div class="controls">
+          <input type="password" id="password_confirm" name="password_confirm" placeholder="Please confirm password" class="input-xlarge form-control" required>
+        </div>
+
+        <!-- Outputting whether confirm password is the same -->
+        <h5 style="color:red" id="passwordconf"></h5>
+      </div>
+
+      <script type="text/javascript">
+      //creating variables
+        var password = document.getElementById("password")
+        , password_confirm = document.getElementById("password_confirm");
+
+        // checking if password and confirm password fields match
+        function validatePassword(){
+        if(password.value != password_confirm.value) {
+        document.getElementById('passwordconf').innerHTML = "Passwords don't match!";
+        document.getElementById('register').disabled = true;
+        }else{
+          document.getElementById('passwordconf').innerHTML = "";
+          document.getElementById('register').disabled = false;
+        }
+        }
+
+        //ensuring function called when event starts
+        password.onchange = validatePassword;
+        password_confirm.onkeyup = validatePassword;
+      </script>
+
+
+      <div class="control-group">
+        <!-- Button -->
+        <div class="controls">
+          <button class="btn btn-success pull-right" id="register">Register</button>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+  </div>
+  <footer> If you fill the form correctly you will be redirected to the login page. From there you can input your details </footer>
+<!-- javascript -->
+ <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+ <script src="js/bootstrap.min.js"></script> 
+</body>
+</html>

@@ -1,0 +1,75 @@
+  <!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">   
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"> 
+        <link href="css/custom.css" rel="stylesheet"> 
+ 
+</head>
+
+<body>
+  <div class="row">
+    <div class="container" id="container1">
+      <form role="form" class="form-horizontal" action="new_worker.php" method="POST">
+        <fieldset>
+          <div>
+            <legend class="text-center">Register</legend>
+          </div>
+          <div class="control-group">
+            <!-- First name -->
+            <label class="control-label"  for="firstname">First Name</label>
+            <div class="controls">
+              <input type="text" id="firstname" name="firstname" pattern="^[a-zA-Z]+$" placeholder="Kwame" title="Please enter a valid first name" class="input-xlarge form-control" required>
+             
+          </div>
+          </div>
+
+          <div class="control-group">
+            <!-- Last name -->
+            <label class="control-label"  for="lastname">Last Name</label>
+            <div class="controls">
+              <input type="text" id="lastname" name="lastname" pattern="^[a-zA-Z]+$" placeholder="Abenkwa" title="Please enter a valid last name" class="input-xlarge form-control" required>
+             
+          </div>
+          </div>
+
+          <div class="control-group">
+            <!-- Telephone Number-->
+            <label class="control-label"  for="telephonenum">Telephone Number</label>
+            <div class="controls">
+              <input type="tel" id="telephonenum" name="telephonenum" pattern="^[0]{1}[0-9]{9}" title="Please enter a valid telephone number" placeholder="0244555777" class="input-xlarge form-control" required>
+             
+          </div>
+          </div>
+       
+          <div class="control-group">
+            <!-- Workman -->
+            <label class="control-label" for="workman">Workman</label>
+            <div class="controls">
+              <input type="text" id="workman" name="workman" placeholder="Plumber" pattern="^[a-zA-Z]+$" title="Please enter a valid kind of workman" class="input-xlarge form-control" required>
+            
+          </div>
+          </div>
+       
+          <div class="control-group">
+            <!-- Button -->
+            <div class="row">
+              <div class="controls">
+                 <button class="btn btn-success pull-right">Register</button>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+
+    </div>
+  </div>
+  <footer> If you fill the form correctly you will be redirected to the login page. From there you can input your details </footer>
+<!-- javascript -->
+ <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+ <script src="js/bootstrap.min.js"></script> 
+</body>
+</html>
