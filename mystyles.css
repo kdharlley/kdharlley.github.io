@@ -1,0 +1,102 @@
+body {
+  font-family: "Cairo";
+  font-size: 15px;
+}
+
+.bg-primary {
+  background-color: #cda34f !important;
+}
+
+/* CARD STYLING */
+ img{
+  /* img { */
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  /* } */
+  opacity: 0.5;
+}
+
+.top-sect{
+  background: #f8f9fa;
+}
+
+/* PROGRESS BAR CHANGES */
+
+.progress {
+  background-color: transparent;
+  height:5px;
+}
+
+.progress-bar{
+  background-color: white;
+}
+
+/* HERO PAGE STYLING  */
+
+.video-fluid,
+.carousel-inner .img-fluid {
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+#VideoBanner {
+  background: #cda34f;
+}
+
+/* NAVIAGTION STYLES */
+
+.nav-pills .nav-link.active {
+  background-color: #cda34f;
+  color: #f8f9fa;
+}
+
+/* CHANGING PRIMARY TO MATCH THEME */
+.text-primary {
+  color: #cda34f !important;
+}
+
+a {
+  color: #cda34f;
+}
+
+a:hover {
+  color: #f7ce3e;
+  text-decoration: double;
+}
+
+/* BUTTONS */
+
+.btn-outline-primary {
+  color: #cda34f;
+  border-color: #cda34f;
+}
+
+.btn-outline-primary:hover {
+  background-color: #cda34f;
+  border-color: #cda34f;
+}
+
+/* CAROUSEL CAPTION POSITIONING */
+.carousel-caption {
+  bottom: 43%;
+}
+
+.carousel-caption2 {
+  top: 23%;
+}
+
+.carousel-caption3 {
+  top: 0%;
+}
+
+/* PORTFOLIO BUTTONS */
+
+.filterDiv {
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
