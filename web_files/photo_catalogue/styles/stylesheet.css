@@ -1,0 +1,376 @@
+figure{
+    padding:0;
+    margin:0;
+
+}
+
+header{
+    padding:0px;
+    margin:0px;
+
+}
+
+fieldset{
+    border:none;
+}
+
+body{
+    background-color: white;
+    margin:0px;
+    font-family: sans-serif;
+    padding: 0px;
+
+}
+
+figure #JumboImg{
+	height: 82vh;
+	width: 100%;
+    background-size: cover;
+
+}
+
+header a{
+	color:white;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header .pipeborder{
+	border-right: 1px solid white;
+}
+
+header #topnav{
+	position:fixed;
+	top:0;
+	background-color: white;
+    width:100%;
+    background-image: linear-gradient(to bottom right, #A6CA2D, #016322);
+
+}
+
+header #logform{
+    float:right;
+    padding-right: 20px;
+    padding: 12px 0 0 20px;
+}
+
+header #logbutton{
+    background-color:transparent;
+    color:white;
+    height:30px;
+    width:15vh;
+    font-size:13pt;
+    border: none;
+    cursor:pointer;
+    padding-bottom:8px;
+}
+
+button:hover{
+    text-decoration: underline;
+}
+
+header #topnav li{
+    margin-top: 0;
+
+	display:inline-table;
+	list-style-position:inside;
+    padding: 3px 30px 6px 30px;
+}
+
+
+header .centered{
+    float:none;
+    margin-left:36%;
+}
+
+header .logoutcentered{
+    float:none;
+    margin-left:40%;
+}
+
+#IntroSect {
+    text-align: center;
+    padding:0;
+    margin:0;
+}
+
+h1{
+    text-decoration: underline;
+    font-size:30px;
+    text-align: center;
+    color: #44981D;
+}
+
+#loginsect{
+    margin: 100px 200px 100px 200px;
+    padding:200px 0 200px 0;
+    border: none;
+    background-image: linear-gradient(to bottom right, #A6CA2D, #016322);
+
+}
+
+#loginsect label{
+    font-size:20px;
+    padding-right: 30px;
+    margin-left:280px;
+}
+
+#logininfo{
+    padding:100px;
+
+}
+
+#loginsect input{
+    width:40vh;
+    height:30px;
+    float:right;
+    margin-right:200px;
+    margin-bottom: 10px;
+
+}
+
+#loginsect .submitbutton{
+    margin: 20px 0 10px 380px;
+}
+
+
+
+#loginsect h1{
+    color:white;
+    text-decoration: none;
+}
+
+#loginsect p{
+    padding-left:40px;
+    padding-top:40px;
+    color:white;
+}
+
+
+.scaleimg{
+    width:400px;
+    height:300px;
+}
+
+
+
+#loginbtn{
+    background-color: transparent;
+    border: 1px solid white;
+    color:white;
+    height:40px;
+    width:15vh;
+    margin:40px 0 0 430px;
+    font-size:13pt;
+
+    cursor:pointer;
+}
+
+#ImgSearch{
+    margin: 0 280px 40px 280px;
+    text-align: center;
+}
+
+#ImgSearch h1{
+    text-decoration: none;
+
+}
+
+#searchimg{
+	width:80vh;
+    height:40px;
+    float:left;
+    color:grey;
+	border: 1px groove lightgrey;
+    font-size:15px;
+    margin-top:20px;
+    margin-left:18px;
+}
+
+#searchlbl{
+    padding:100px;
+}
+
+.submitbtn{
+    background-image: linear-gradient(to bottom right, #A6CA2D, #016322);
+    float:right;
+    color:white;
+    height:45px;
+    width:20vh;
+    font-size:16pt;
+    border: none;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+.allimages{
+    margin:100px 54px 0 54px;
+    border-top: 1px solid black;
+}
+
+.imgRecord h6, .imgRecordlogout h6{
+    text-align:center;
+    padding: 20px 0 10px 0;
+    margin:0;
+}
+
+
+.imgRecord {
+    float:left;
+    border: 1px groove lightgrey;
+    height: 770px;
+    width: 400px;
+    margin: 50px 20px 0 20px;
+
+}
+
+.imgRecordlogout{
+    float:left;
+    border: 1px groove lightgrey;
+    min-height: 720px;
+    width: 400px;
+    margin: 50px 20px 0 20px;
+}
+
+.tagbtn{
+    background-image: linear-gradient(to bottom right, #A6CA2D, #016322);
+    color:white;
+    height:10px;
+    width:58px;
+    font-size:4pt;
+    border: none;
+    cursor:pointer;
+}
+
+.imgRecord li, .imgRecordlogout li, #tags li{
+    display:inline-table;
+    list-style-position:inside;
+}
+
+.imgRecord ul, .imgRecordlogout ul, #tags ul{
+    margin:auto;
+}
+
+#loginsect li {
+    display:inline-table;
+    list-style-position:inside;
+}
+
+.viewbutton{
+    margin-bottom:10px;
+    width:400px;
+    height:50px;
+    background-image: linear-gradient(to bottom right, #A6CA2D, #016322);
+    color:white;
+    font-size:15px;
+    border:none;
+}
+
+.viewbutton p{
+    text-align:center;
+    padding: 20px 80px 0 0px;
+}
+
+.viewbutton a{
+    color:white;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+.imgRecord p, .imgRecordlogout p{
+    margin-left: 80px;
+}
+
+
+.imgRecord select, .imgRecordlogout select{
+    color:black;
+    width: 20vh;
+    height:30px;
+    margin-left: 30px;
+}
+
+#loginsect h4{
+    text-align: center;
+    color:white;
+}
+
+
+#searchlbl{
+    margin-left:30px;
+}
+
+#allimages{
+    margin-right:350px;
+}
+
+#fileinput{
+    padding-bottom:30px;
+}
+
+#selecttags{
+    margin-left:425px;
+    padding-bottom:20px;
+
+}
+
+select[multiple]{
+    font-size:13pt;
+    padding: 10px;
+
+}
+
+.notags{
+    padding-bottom:17px;
+}
+
+.newtag{
+    margin-left:6px;
+}
+
+.taglogout{
+    padding:10px;
+}
+
+#tags{
+    border-top: 1px groove lightgrey;
+    border-bottom: 1px groove lightgrey;
+    margin: 60px 250px 0 250px;
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+
+#tags h1{
+    text-decoration:none;
+}
+
+
+#tags .tagbtn{
+    height: 40px;
+    width: 130px;
+    font-size: 12pt;
+}
+
+.taglogout button:hover{
+    text-decoration:none;
+}
+
+.refer{
+    font-size: 5pt;
+    padding:0;
+    margin:0;
+}
+
+#jumboref{
+    color:green;
+}
+
+#centerref{
+    text-align: center;
+}

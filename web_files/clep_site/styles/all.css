@@ -1,0 +1,686 @@
+/* main styling */
+@font-face {
+    font-family: "Chalkfont";
+    src: url(/fonts/Sketch-Serif.ttf);
+    /* source: https://www.dafont.com/sketch-serif.font */
+}
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #FFF7DA;
+}
+
+body{
+    width:100%;
+    margin:0;
+    padding:0;
+    max-width:100%;
+}
+
+header {
+    background-image:url(/images/logo.png); /* source: https://orgsync.com/72275/chapter */
+    background-position: 3.5% 50%;
+    background-repeat: no-repeat;
+    background-size: 225px 85px;
+    color: white;
+    background-color: #B31D1C;
+    text-align: center;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+header a {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+}
+
+.container img{
+    width:100%;
+    height:350px;
+    margin-top:0px;
+}
+
+.container{
+    position: relative;
+    text-align: center;
+    margin-top:-9px;
+    z-index:0;
+}
+
+.right_side{
+    margin-right:5%;
+    margin-left:25%;
+    padding-top:40px;
+    padding-bottom:100px;
+}
+
+.main{
+    background: linear-gradient(rgba(255, 247, 218,0.5),rgba(255, 247, 218,0.75)), url(/images/banner.png); /* source: http://orgsync.rso.cornell.edu/org/lep/home */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 800px;
+}
+
+.main_content{
+    color: #2D2C2C;
+    border-radius:40px;
+    margin-right:10%;
+    background-color: rgba(255, 247, 218,0.85);
+    box-shadow: 3px 3px 6px #FBCA99;
+    padding: 7.5%;
+    line-height: 1.75em;
+}
+/*^^^ MAIN STYLING END */
+
+/* nav bar styling */
+#active_page, #active_page a {
+    font-weight: bold;
+    color: white !important;
+    text-shadow: 0px .5px 10px #FBCA99;
+}
+
+#nav_bar{
+    width:21%;
+    position:fixed;
+    z-index: 0;
+    bottom:230px;
+    text-align: center;
+}
+
+#nav_bar ul{
+    margin-left:15%;
+    background-image:url(/images/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:5px;
+    padding-bottom:5px;
+    list-style-type:none;
+    margin-bottom:0;
+    padding-left:10px;
+    padding-right:10px;
+    font-size:18px;
+    letter-spacing: 1px;
+}
+
+#nav_bar li{
+    padding-bottom:8px;
+    margin-top:7px;
+}
+
+#nav_bar a{
+    font-family: "Chalkfont";
+    text-decoration: none;
+    color: white;
+    transition:color .2s ease-out, background 1s ease-in;
+}
+
+#nav_bar a:hover {
+    color:#FBCA99;
+
+}
+/*^^^^ nav bar styling END */
+
+/* GENERAL FORM STYLING */
+form ul{
+    list-style-type: none;
+}
+
+/* GENERAL FORM STYLING END */
+
+/* Footer styling */
+footer{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    text-align:center;
+    background-color:#B31D1C;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+footer a, footer p{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 16px;
+    color:white;
+}
+/*^^^ footer styling END */
+
+/* index.php styling */
+.gallery{
+    margin-top: 10px;
+}
+
+#social-media img{
+ max-width: 50%;
+}
+/* ^^^index.php styling END */
+
+/* eboard.php styling */
+.profilepic{
+    height:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:20px;
+    border-radius:25px;
+    box-shadow: 3px 3px 3px silver;
+}
+
+.ppiclarge{
+    height: 600px;
+    padding-left: 50px;
+}
+
+.EboardMember{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px groove lightgrey;
+    width: 100%;
+    text-align: center;
+}
+
+.viewmember{
+    padding: 10px 70px 10px 70px;
+    margin-top: 50px;
+    font-size:20px;
+}
+
+.interactdiv{
+    margin: 10px 10px 0 10px;
+    border-radius: 100%;
+    width:45px;
+    height:50px;
+    background-image: linear-gradient(to bottom right,  #7EAE41, rgb(138, 204, 52));
+    color:white;
+    font-size:15px;
+    padding:10px 14px 10px 14px;
+}
+
+.buttngrp, .buttngrp2, .buttngrp3{
+    display:inline-flex;
+    list-style: none;
+    margin-left:40px;
+}
+
+.buttngrp3{
+    margin-left: 130px;
+}
+
+#orderBy, #eBoardEditButtons{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto 20px auto;
+    max-width: 500px;
+}
+
+#orderBy a{
+    height: 22px !important;
+}
+
+.buttngrp{
+    padding-bottom:10px;
+    padding-left: 150px;
+    text-align: center;
+}
+
+.buttngrp h1{
+    padding: 10px 10px 0 0;
+}
+
+.interactdiv a{
+    text-decoration: none;
+    color:white;
+    text-align: center;
+}
+
+.interactdiv p{
+    text-align: center;
+}
+
+
+.interactdiv:hover{
+    text-decoration: underline;
+}
+
+.eb_info{
+    font-weight: bold;
+}
+
+.viewmember .interactdiv{
+    margin: 20px 20px 0 20px;
+    border-radius: 100%;
+    width:90px;
+    height:100px;
+    font-size:30px;
+    padding:20px 20px 4px 20px;
+}
+
+#searchinput{
+    padding: 5px;
+    width:300px;
+    border-radius: 8px;
+}
+
+#search-eboard{
+    text-align: center;
+}
+
+#eboard-upload-form{
+    text-align: left;
+}
+
+.interactdiv{
+    margin: 0px 10px 0 360px;
+    padding:17px 30px 17px 10px;
+}
+
+.in-charge{
+    list-style: none;
+    text-align: center;
+}
+
+.right{
+    float: right;
+}
+
+/* ^^^ eboard.php styling END */
+
+/* Log in page styling */
+.log_in_page{
+    width:350px;
+    box-shadow: 3px 3px 6px #FBCA99;
+    width:375px;
+    background-color: #FFFDF5;
+    margin-left:25%;
+    height:500px;
+    border-radius:40px;
+    padding-top:40px;
+    text-align:center;
+    margin-top:70px;
+    margin-bottom: 80px;
+    line-height:3.6;
+}
+
+#log_in li{
+    list-style-type:none;
+}
+
+#log_in input{
+    font-size: 20px;
+    color:#f6b93b;
+    line-height: 1.2;
+    display: block;
+    width: 70%;
+    height: 62px;
+    background: transparent;
+    padding: 0 20px 0 23px;
+    margin-bottom:25px;
+    border:none;
+    border-bottom: 2px solid;
+}
+
+.account_in{
+    margin-top: 40px;
+    color: #f6b93b !important;
+    text-transform: uppercase;
+    background: #ffffff;
+    margin-left: -40px;
+    padding: 12px;
+    border: 2px solid #f6b93b !important;
+    border-radius: 20px;
+    display: inline-block;
+    font-size:18px;
+    width:100px;
+
+}
+
+.account_in:hover{
+    color: #ffffff !important;
+    background: #f6b93b;
+    border-color: #f6b93b !important;
+    transition: all 0.4s ease 0s;
+    font-weight:bold;
+}
+
+#welcome_back{
+    color: #f6b93b;
+    font-size:34px;
+    margin-top:0;
+    margin-bottom:0;
+    font-weight: bold;
+}
+/*^^^ log in styling END */
+
+/* JOIN US PAGE */
+
+#people{
+    width:100%;
+    margin-bottom:10px;
+    box-shadow: 3px 3px 3px silver;
+    border-radius: 16px;
+}
+
+#interbut{
+    margin-top: 30px;
+    background-color: transparent;
+    border:none;
+    color:white;
+    font-size: 25px;
+}
+
+#interbut:hover{
+    text-decoration: underline;
+}
+
+.open_position {
+    padding-left: 20px;
+    border-left: 3px solid #FBCA99;
+    margin-bottom: 30px;
+}
+
+.open_position h3 {
+    margin-bottom: 0px;
+}
+
+#positions {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 50px;
+  }
+
+  #positions td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-weight: normal;
+  }
+
+  #positions th {
+    border: 1px solid #ddd;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #FBCA99;
+    color:#2D2C2C;
+  }
+
+
+  #apps {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  #apps td, #customers th {
+    padding: 8px;
+  }
+
+  #apps th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color:black;
+  }
+
+.app_h3 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#JoinUs, #edit-eboard- {
+  width: 520px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  border-left: 3px solid #FBCA99;
+}
+
+.asterisk:after{
+    content:"*";
+    color:#B31D1C;
+}
+
+#Apply {
+    width: 700px;
+    border-left: 3px solid #FBCA99;
+}
+
+#add_position {
+    width: 430px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    border-left: 3px solid #FBCA99;
+}
+
+#add_position input {
+    float: right;
+}
+
+#JoinUs label{
+    display: inline-block;
+    text-align: left;
+    width: 270px;
+    margin: 10px 10px 10px 0px;
+}
+#edit-eboard-form label{
+    display: inline-block;
+    text-align: left;
+    width: 130px;
+    margin: 10px 10px 10px 0px;
+}
+
+#Apply label {
+    display: inline-block;
+    text-align: left;
+    width: 400px;
+    margin: 10px 10px 10px 0px;
+}
+
+/* ^^ Join us page END */
+
+/* event.php Styling */
+.event{
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 4px;
+}
+
+
+.event-name{
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.show-event-details, .show-position-details, .link{
+    color: #0000EE;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0 0 0 10px;
+    margin: 0;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.show-less, #hide-form{
+    color: #0000EE;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.button, button{
+    text-align: center;
+    padding: 5px 9px 5px 9px !important;
+    margin: 8px auto;
+    min-width: 80px;
+    letter-spacing: normal;
+    color:white;
+    text-decoration: none;
+    background-color: #7EAE41;
+    background-clip: padding-box;
+    border-radius: 8px;
+    /* width: 100px; */
+    font-size:17px;
+}
+
+.button:hover, button:hover{
+    color: white !important;
+    border-color:#7EAE41 !important;
+    transition: all 0.3s ease 0s;
+    border-radius:50px;
+}
+
+.error{
+    color: #7EAE41;
+    text-align: center;
+}
+
+#add-event{
+    color: #0000EE;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#eventForm label, #eboard-upload-form label{
+    display: inline-block;
+    text-align: left;
+    width: 110px;
+    margin: 10px 10px 10px 0px;
+}
+
+.below{
+    display: block !important;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: auto !important;
+    text-align: left !important;
+}
+
+#name-label{
+    display: inline-block;
+    text-align: left;
+    width: 50px !important;
+    margin: 10px 10px 10px 0px;
+}
+  /*^^^ event.php styling END */
+
+.message{
+    color: #B31D1C;
+    list-style-type: none;
+    text-decoration:underline;
+    font-size: 15px;
+    line-height: 1em;
+}
+
+.join_h2{
+    font-size:18px;
+    text-align:center;
+    font-weight: bold;
+}
+
+#message{
+    color:#B31D1C;
+    font-size: 15px;
+    line-height: 1em;
+}
+
+cite {
+    text-align:center !important;
+    font-size: 12px;
+    color: gray;
+}
+
+#wink{
+    width:400px;
+}
+
+.centered {
+    text-align: center !important;
+}
+
+.dogpic {
+    border-radius: 16px;
+    box-shadow: 3px 3px 3px silver;
+}
+
+#search_things{
+    margin-left:25px;
+}
+
+#eboard_submit{
+    margin-left:60%;
+    margin-top:10px;
+}
+
+.electricform h1, .electricform #message{
+    text-align:left;
+}
+
+#event_submit{
+    margin-left:65%;
+    margin-top:10px;
+}
+
+#addEvent h2, #addEvent p{
+    margin-left:39px;
+}
+
+#addEvent {
+    border-left: 3px solid #FBCA99;
+}
+
+#edit_form{
+    margin-left:60%;
+    margin-top:20px
+}
+
+#edit_event{
+    margin-left:39px;
+}
+
+#join_button{
+    margin-top:20px;
+    margin-left:72%;
+}
+
+#position_button{
+    margin-left:105%;
+    margin-top:20px;
+}
+
+#appform_button{
+    margin-left:62%;
+    margin-top:20px;
+}
+
+input{
+    font-size:14px;
+}
+
+.members{
+    margin-left:42%;
+}
+
+.replace{
+    white-space: nowrap;
+}
+
+.name_style{
+    margin-left:20px;
+}
+
+.quote_left{
+    font-size:44px;
+    text-align:left;
+    height:0px;
+}
+
+.quote_right{
+    font-size:44px;
+    text-align:right;
+    height:0px;
+}
