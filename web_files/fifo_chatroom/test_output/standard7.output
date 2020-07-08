@@ -1,0 +1,9 @@
+alive 2
+alive 0,1,2
+alive 1
+alive 0,1,2
+alive 0,1,2
+alive 0,1,2
+messages m4
+messages m3,m4
+messages m4

@@ -1,0 +1,168 @@
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:1:go north.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:1:go north is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:1:go north.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:2:go east.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:2:go east is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:2:go east.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:5:chars in game1.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:5:chars in game1 is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:5:chars in game1.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:7:elite 3 in game1.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:7:elite 3 in game1 is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:7:elite 3 in game1.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:8:non-elite 3 in nsew.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:8:non-elite 3 in nsew is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:8:non-elite 3 in nsew.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:10:roster length game1.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:10:roster length game1 is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:10:roster length game1.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:12:game1 room description.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:12:game1 room description is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:12:game1 room description.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:14:Julia is in elite3.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:14:Julia is in elite3 is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:14:Julia is in elite3.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:16:fire to water.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:16:fire to water is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:16:fire to water.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:18:ice to ground.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:18:ice to ground is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:18:ice to ground.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:20:fire to grass.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:20:fire to grass is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:20:fire to grass.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:22:water to fire.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:22:water to fire is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:22:water to fire.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:24:water to ground.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:24:water to ground is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:24:water to ground.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:26:extraneous normal.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:26:extraneous normal is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:26:extraneous normal.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:28:fighting to normal.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:28:fighting to normal is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:28:fighting to normal.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:30:ice to grass.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:30:ice to grass is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:30:ice to grass.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:32:ice to fire.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:32:ice to fire is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:32:ice to fire.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:34:fire to ground.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:34:fire to ground is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:34:fire to ground.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:36:Ivysaur HP.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:36:Ivysaur HP is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:36:Ivysaur HP.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:38:Ivysaur attack.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:38:Ivysaur attack is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:38:Ivysaur attack.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:40:Bulbasaur HP same as max.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:40:Bulbasaur HP same as max is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:40:Bulbasaur HP same as max.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:42:Bulbasaur name.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:42:Bulbasaur name is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:42:Bulbasaur name.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:45:Ivysaur description.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:45:Ivysaur description is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:45:Ivysaur description.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:47:Pikcahu level up.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:47:Pikcahu level up is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:47:Pikcahu level up.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:49:change Pikachu hp check.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:49:change Pikachu hp check is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:49:change Pikachu hp check.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:51:heal Pikachu hp check.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:51:heal Pikachu hp check is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:51:heal Pikachu hp check.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:53:Pikachu death test.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:53:Pikachu death test is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:53:Pikachu death test.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:54:Pikachu alive test.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:54:Pikachu alive test is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:54:Pikachu alive test.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:57:Valid move test.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:57:Valid move test is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:57:Valid move test.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:58:Invalid move test.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:58:Invalid move test is successful.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:58:Invalid move test.
+2020-05-10T20:51:24+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:61:Testing xp reset.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:61:Testing xp reset is successful.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:61:Testing xp reset.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:62:Growl accuracy test.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:62:Growl accuracy test is successful.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:62:Growl accuracy test.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:64:Slam damage string test.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:64:Slam damage string test is successful.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:64:Slam damage string test.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:67:Growl damage test.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:67:Growl damage test is successful.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:67:Growl damage test.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:69:Element Type Int Test Reverse.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:69:Element Type Int Test Reverse is successful.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:69:Element Type Int Test Reverse.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:71:Normal Valid Type Test.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:71:Normal Valid Type Test is successful.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:71:Normal Valid Type Test.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:72:Cat Valid type test.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:72:Cat Valid type test is successful.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:72:Cat Valid type test.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:75:Start Room Test.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:75:Start Room Test is successful.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:75:Start Room Test.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:77:Checking ash is  not in room1.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:77:Checking ash is  not in room1 is successful.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:77:Checking ash is  not in room1.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:79:Correct identification of non-elite characters test.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:79:Correct identification of non-elite characters test is successful.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:79:Correct identification of non-elite characters test.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:81:Testing ash is in room 2.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:81:Testing ash is in room 2 is successful.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:81:Testing ash is in room 2.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:82:Testing room2 is east of room1.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:82:Testing room2 is east of room1 is successful.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:82:Testing room2 is east of room1.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:84:Testing Julia's name is julia.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:84:Testing Julia's name is julia is successful.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:84:Testing Julia's name is julia.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:87:Testing Julia's pikachu alive at end.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:87:Testing Julia's pikachu alive at end is successful.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:87:Testing Julia's pikachu alive at end.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:88:Testing Julia's pikachu dead in the middle.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:88:Testing Julia's pikachu dead in the middle is successful.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:88:Testing Julia's pikachu dead in the middle.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:90:Testing switching to Julia's pikachu.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:90:Testing switching to Julia's pikachu is successful.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:90:Testing switching to Julia's pikachu.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:93:Testing at end no characters undefeated in start room.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:93:Testing at end no characters undefeated in start room is successful.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:93:Testing at end no characters undefeated in start room.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:94:Testing in middle Pat undefeated in start room.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:94:Testing in middle Pat undefeated in start room is successful.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:94:Testing in middle Pat undefeated in start room.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:96:Testing at end no trainers to defeat.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:96:Testing at end no trainers to defeat is successful.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:96:Testing at end no trainers to defeat.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:99:Testing leveling pikachu zero accurate.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:99:Testing leveling pikachu zero accurate is successful.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:99:Testing leveling pikachu zero accurate.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:101:parsing challenge command.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:101:parsing challenge command is successful.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:101:parsing challenge command.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:103:parsing quit command.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:103:parsing quit command is successful.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:103:parsing quit command.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:104:parsing battle command.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:104:parsing battle command is successful.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:104:parsing battle command.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:106:parsing observe command.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:106:parsing observe command is successful.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:106:parsing observe command.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:108:parsing switch command.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:108:parsing switch command is successful.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:108:parsing switch command.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Start test test suite for Pokemon Project:111:parsing rules command.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: Test test suite for Pokemon Project:111:parsing rules command is successful.
+2020-05-10T20:51:25+00:00 Kenneths-MacBook-Pro.local#02 I: End test test suite for Pokemon Project:111:parsing rules command.

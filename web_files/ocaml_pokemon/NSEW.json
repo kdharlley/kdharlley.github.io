@@ -1,0 +1,117 @@
+{
+  "rooms": [
+    {
+      "name": "start",
+      "north_room": "room_2",
+      "south_room": "",
+      "east_room": "room_3",
+      "west_room": "",
+      "has_pokemon_center": false,
+      "description": "You can begin your journey here, or, rather, continue it. Explore this new place.",
+      "characters": [
+        {
+          "name": "Noah",
+          "description": "He might with a decent probability catch them all",
+          "pokemon": "Charmander"
+        }
+      ]
+    },
+    {
+      "name": "room_2",
+      "north_room": "",
+      "south_room": "start",
+      "east_room": "room_4",
+      "west_room": "",
+      "has_pokemon_center": false,
+      "description": "woah! another place! go catch em all dude",
+      "characters": [
+        {
+          "name": "Nick",
+          "description": "He's gonna catch them all",
+          "pokemon": "Ivysaur"
+        },
+        {
+          "name": "Duncan",
+          "description": "He's sadly not gonna catch them all",
+          "pokemon": "Bulbasaur"
+        }
+      ]
+    },
+    {
+      "name": "room_3",
+      "north_room": "room_4",
+      "south_room": "",
+      "east_room": "",
+      "west_room": "start",
+      "has_pokemon_center": true,
+      "description": "Come here when you want your pokemon to regain strength!",
+      "characters": []
+    },
+    {
+      "name": "room_4",
+      "north_room": "room_5",
+      "south_room": "room_3",
+      "east_room": "room_6",
+      "west_room": "room_2",
+      "has_pokemon_center": false,
+      "description": "There's someone over there! Who is it? Obsesrve to find out",
+      "characters": [
+        {
+          "name": "Ken",
+          "description": "Get ready to face the third strongest trainer",
+          "pokemon": "Charmeleon"
+        }
+      ]
+    },
+    {
+      "name": "room_5",
+      "north_room": "",
+      "south_room": "room_4",
+      "east_room": "room_7",
+      "west_room": "",
+      "has_pokemon_center": false,
+      "description": "You have beat the third strongest trainer, look around to see who's next",
+      "characters": [
+        {
+          "name": "Aidan",
+          "description": "Get ready to face the second strongest trainer",
+          "pokemon": "Venusaur"
+        }
+      ]
+    },
+    {
+      "name": "room_6",
+      "north_room": "room_7",
+      "south_room": "",
+      "east_room": "",
+      "west_room": "room_4",
+      "has_pokemon_center": true,
+      "description": "You beat the third best trainer! Come here when you want your pokemon to regain strength!",
+      "characters": []
+    },
+    {
+      "name": "room_7",
+      "north_room": "",
+      "south_room": "room_6",
+      "east_room": "",
+      "west_room": "room_5",
+      "has_pokemon_center": false,
+      "description": "Woah check out that bald red-head (oxymoron?) over there, you should battle her and become champion!",
+      "characters": [
+        {
+          "name": "Julia",
+          "description": "Get ready to face the strongest trainer",
+          "pokemon": "Charizard"
+        }
+      ]
+    }
+  ],
+  "description": " Welcome to the Kanto Pokemon Region",
+  "elite3": [
+    "Ken",
+    "Aidan",
+    "Julia"
+  ],
+  "start_room": "start",
+  "roster_length": 4
+}

@@ -1,0 +1,107 @@
+{
+  "rooms": [
+    {
+      "name": "room1",
+      "north_room": "",
+      "south_room": "room4",
+      "east_room": "room2",
+      "west_room": "room4",
+      "has_pokemon_center": false,
+      "description": "Welcome young trainer, this is the starting point of your journey. Feel free to look around and explore the map. Observe the space. \n This is room 1",
+      "characters": [
+        {
+          "name": "Pat",
+          "description": "He might with a decent probability catch them all",
+          "pokemon": "Charmander"
+        }
+      ]
+    },
+    {
+      "name": "room2",
+      "north_room": "",
+      "south_room": "room5",
+      "east_room": "room3",
+      "west_room": "room1",
+      "has_pokemon_center": false,
+      "description": "Woah, there are some dudes here. Why don't you check them out? \n This is room 2",
+      "characters": [
+        {
+          "name": "Ash",
+          "description": "He's gonna catch them all",
+          "pokemon": "Ivysaur"
+        },
+        {
+          "name": "Joe",
+          "description": "He's sadly not gonna catch them all",
+          "pokemon": "Bulbasaur"
+        }
+      ]
+    },
+    {
+      "name": "room3",
+      "north_room": "",
+      "south_room": "room6",
+      "east_room": "",
+      "west_room": "room2",
+      "has_pokemon_center": true,
+      "description": "There seems to be a pokemon center over there! Remember that when you need to heal your pokemon. \n This is room 3",
+      "characters": []
+    },
+    {
+      "name": "room4",
+      "north_room": "room1",
+      "south_room": "",
+      "east_room": "room5",
+      "west_room": "",
+      "has_pokemon_center": false,
+      "description": "Approach carefully, this is the training space of one of the elite trainers of this map. \n This is room 4",
+      "characters": [
+        {
+          "name": "Ken",
+          "description": "Get ready to face the third strongest trainer",
+          "pokemon": "Charmeleon"
+        }
+      ]
+    },
+    {
+      "name": "room5",
+      "north_room": "room2",
+      "south_room": "",
+      "east_room": "room6",
+      "west_room": "room4",
+      "has_pokemon_center": false,
+      "description": "You have entered the garden, Aidan likes to hangout here with his pokemon. He is an elite trainer. \n This is room 5",
+      "characters": [
+        {
+          "name": "Aidan",
+          "description": "Get ready to face the second strongest trainer",
+          "pokemon": "Venusaur"
+        }
+      ]
+    },
+    {
+      "name": "room6",
+      "north_room": "room3",
+      "south_room": "",
+      "east_room": "",
+      "west_room": "room5",
+      "has_pokemon_center": false,
+      "description": "'Welcome', you hear a voice say from behind the bushes... Observe and you may find another elite trainer. \n This is room 6",
+      "characters": [
+        {
+          "name": "Julia",
+          "description": "Get ready to face the strongest trainer",
+          "pokemon": "Charizard"
+        }
+      ]
+    }
+  ],
+  "description": " Welcome to the Kanto Pokemon Region",
+  "elite3": [
+    "Ken",
+    "Aidan",
+    "Julia"
+  ],
+  "start_room": "room1",
+  "roster_length": 4
+}

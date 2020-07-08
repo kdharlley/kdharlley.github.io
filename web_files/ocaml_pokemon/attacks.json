@@ -1,0 +1,386 @@
+[
+  {
+    "accuracy": 75,
+    "ename": "Slam",
+    "id": 1,
+    "power": 80,
+    "pp": 20,
+    "type": "Normal"
+  },
+  {
+    "accuracy": 100,
+    "ename": "Tackle",
+    "id": 2,
+    "power": 40,
+    "pp": 25,
+    "type": "Normal"
+  },
+  {
+    "accuracy": 100,
+    "ename": "Vine Whip",
+    "id": 3,
+    "power": 45,
+    "pp": 25,
+    "type": "Grass"
+  },
+  {
+    "accuracy": 100,
+    "ename": "Stomp",
+    "id": 4,
+    "power": 65,
+    "pp": 20,
+    "type": "Normal"
+  },
+  {
+    "accuracy": 100,
+    "ename": "Double Kick",
+    "id": 5,
+    "power": 30,
+    "pp": 30,
+    "type": "Fighting"
+  },
+  {
+    "accuracy": 75,
+    "ename": "Mega Kick",
+    "id": 6,
+    "power": 120,
+    "pp": 5,
+    "type": "Normal"
+  },
+  {
+    "accuracy": 95,
+    "ename": "Jump Kick",
+    "id": 7,
+    "power": 130,
+    "pp": 10,
+    "type": "Fighting"
+  },
+  {
+    "accuracy": 85,
+    "ename": "Rolling Kick",
+    "id": 8,
+    "power": 60,
+    "pp": 15,
+    "type": "Fighting"
+  },
+  {
+    "accuracy": 100,
+    "ename": "Poison Sting",
+    "id": 9,
+    "power": 15,
+    "pp": 35,
+    "type": "Poison"
+  },
+  {
+    "accuracy": 100,
+    "ename": "Twineedle",
+    "id": 10,
+    "power": 25,
+    "pp": 20,
+    "type": "Normal"
+  },
+  {
+    "accuracy": 95,
+    "ename": "Pin Missile",
+    "id": 11,
+    "power": 25,
+    "pp": 20,
+    "type": "Normal"
+  },
+  {
+    "accuracy": 100,
+    "ename": "Acid",
+    "id": 12,
+    "power": 40,
+    "pp": 30,
+    "type": "Poison"
+  },
+  {
+    "accuracy": 100,
+    "ename": "Ember",
+    "id": 13,
+    "power": 40,
+    "pp": 25,
+    "type": "Fire"
+  },
+  {
+    "accuracy": 100,
+    "ename": "Water Gun",
+    "id": 14,
+    "power": 40,
+    "pp": 25,
+    "type": "Water"
+  },
+  {
+    "accuracy": 80,
+    "ename": "Hydro Pump",
+    "id": 15,
+    "power": 110,
+    "pp": 5,
+    "type": "Water"
+  },
+  {
+    "accuracy": 100,
+    "ename": "Surf",
+    "id": 16,
+    "power": 90,
+    "pp": 15,
+    "type": "Water"
+  },
+  {
+    "accuracy": 95,
+    "ename": "Thunderbolt",
+    "id": 17,
+    "power": 98,
+    "pp": 14,
+    "type": "Electric"
+  },
+  {
+    "accuracy": 100,
+    "ename": "Gust",
+    "id": 18,
+    "power": 40,
+    "pp": 35,
+    "type": "Flying"
+  },
+  {
+    "accuracy": 100,
+    "ename": "Quick Attack",
+    "id": 19,
+    "power": 40,
+    "pp": 30,
+    "type": "Normal"
+  },
+  {
+    "accuracy": 100,
+    "ename": "Growl",
+    "id": 20,
+    "power": 40,
+    "pp": 40,
+    "type": "Normal"
+  },
+  {
+    "accuracy": 100,
+    "ename": "Sunny Day",
+    "id": 21,
+    "power": 10,
+    "pp": 5,
+    "type": "Fire"
+  },
+  {
+    "accuracy": 100,
+    "ename": "Tail Whip",
+    "id": 22,
+    "power": 30,
+    "pp": 30,
+    "type": "Normal"
+  },
+  {
+    "accuracy": 100,
+    "ename": "Rage",
+    "id": 23,
+    "power": 20,
+    "pp": 20,
+    "type": "Normal"
+  },
+  {
+    "accuracy": 100,
+    "ename": "Scratch",
+    "id": 24,
+    "power": 40,
+    "pp": 35,
+    "type": "Normal"
+  },
+  {
+    "accuracy": 100,
+    "ename": "Bubble",
+    "id": 25,
+    "power": 40,
+    "pp": 30,
+    "type": "Water"
+  },
+  {
+    "accuracy": 100,
+    "ename": "Focus Energy",
+    "id": 26,
+    "power": 0,
+    "pp": 30,
+    "type": "Normal"
+  },
+  {
+    "accuracy": 100,
+    "ename": "Bite",
+    "id": 27,
+    "power": 60,
+    "pp": 25,
+    "type": "Normal"
+  },
+  {
+    "accuracy": 85,
+    "ename": "Screech",
+    "id": 28,
+    "power": 60,
+    "pp": 40,
+    "type": "Normal"
+  },
+  {
+    "accuracy": 100,
+    "ename": "Flame Charge",
+    "id": 29,
+    "power": 50,
+    "pp": 20,
+    "type": "Fire"
+  },
+  {
+    "accuracy": 100,
+    "ename": "Incinerate",
+    "id": 30,
+    "power": 60,
+    "pp": 15,
+    "type": "Fire"
+  },
+  {
+    "accuracy": 100,
+    "ename": "Ice Shard",
+    "id": 31,
+    "power": 40,
+    "pp": 35,
+    "type": "Ice"
+  },
+  {
+    "accuracy": 100,
+    "ename": "Wing Attack",
+    "id": 32,
+    "power": 60,
+    "pp": 35,
+    "type": "Flying"
+  },
+  {
+    "accuracy": 100,
+    "ename": "Arm Thrust",
+    "id": 33,
+    "power": 15,
+    "pp": 20,
+    "type": "Fighting"
+  },
+  {
+    "accuracy": 100,
+    "ename": "Seismic Toss",
+    "id": 34,
+    "power": 20,
+    "pp": 20,
+    "type": "Fighting"
+  },
+  {
+    "accuracy": 90,
+    "ename": "Earthquake",
+    "id": 35,
+    "power": 80,
+    "pp": 20,
+    "type": "Ground"
+  },
+  {
+    "accuracy": 60,
+    "ename": "Leaf Storm",
+    "id": 36,
+    "power": 120,
+    "pp": 20,
+    "type": "Grass"
+  },
+  {
+    "accuracy": 70,
+    "ename": "Close Combat",
+    "id": 37,
+    "power": 90,
+    "pp": 20,
+    "type": "Fighting"
+  },
+  {
+    "accuracy": 100,
+    "ename": "Aerial Ace",
+    "id": 38,
+    "power": 60,
+    "pp": 20,
+    "type": "Flying"
+  },
+  {
+    "accuracy": 75,
+    "ename": "Ice Beam",
+    "id": 39,
+    "power": 80,
+    "pp": 20,
+    "type": "Ice"
+  },
+  {
+    "accuracy": 20,
+    "ename": "Sheer Cold",
+    "id": 40,
+    "power": 500,
+    "pp": 20,
+    "type": "Ice"
+  },
+  {
+    "accuracy": 20,
+    "ename": "Fissure",
+    "id": 41,
+    "power": 500,
+    "pp": 20,
+    "type": "Ground"
+  },
+  {
+    "accuracy": 70,
+    "ename": "Thunder",
+    "id": 42,
+    "power": 110,
+    "pp": 20,
+    "type": "Electric"
+  },
+  {
+    "accuracy": 90,
+    "ename": "Thunder Punch",
+    "id": 43,
+    "power": 70,
+    "pp": 20,
+    "type": "Electric"
+  },
+  {
+    "accuracy": 90,
+    "ename": "Sludge Bomb",
+    "id": 44,
+    "power": 80,
+    "pp": 20,
+    "type": "Poison"
+  },
+  {
+    "accuracy": 80,
+    "ename": "Megahorn",
+    "id": 45,
+    "power": 120,
+    "pp": 20,
+    "type": "Normal"
+  },
+  {
+    "accuracy": 90,
+    "ename": "Mega Drain",
+    "id": 46,
+    "power": 70,
+    "pp": 20,
+    "type": "Grass"
+  },
+  {
+    "accuracy": 85,
+    "ename": "Flamethrower",
+    "id": 47,
+    "power": 90,
+    "pp": 20,
+    "type": "Fire"
+  },
+  {
+    "accuracy": 100,
+    "ename": "Peck",
+    "id": 48,
+    "power": 60,
+    "pp": 20,
+    "type": "Flying"
+  }
+]

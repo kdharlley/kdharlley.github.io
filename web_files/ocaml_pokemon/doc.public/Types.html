@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="previous" href="Gameworld.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Pokemon" rel="Chapter" href="Pokemon.html">
+<link title="Command" rel="Chapter" href="Command.html">
+<link title="State" rel="Chapter" href="State.html">
+<link title="Main" rel="Chapter" href="Main.html">
+<link title="Author" rel="Chapter" href="Author.html">
+<link title="Attacks" rel="Chapter" href="Attacks.html">
+<link title="Gameworld" rel="Chapter" href="Gameworld.html">
+<link title="Types" rel="Chapter" href="Types.html"><title>Types</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="Gameworld.html" title="Gameworld">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;</div>
+<h1>Module <a href="type_Types.html">Types</a></h1>
+
+<pre><span id="MODULETypes"><span class="keyword">module</span> Types</span>: <code class="code">sig</code> <a href="Types.html">..</a> <code class="code">end</code></pre><div class="info module top">
+<div class="info-desc">
+<p>Representation of static type data.</p>
+
+<p>This module represents types, including conversions from strings
+     to types and types to strings.</p>
+</div>
+</div>
+<hr width="100%">
+
+<pre><span id="TYPEelemtype"><span class="keyword">type</span> <code class="type"></code>elemtype</span> </pre>
+<div class="info ">
+<div class="info-desc">
+<p>The abstract type representing a pokemon's type.</p>
+</div>
+</div>
+
+
+<pre><span id="VALeffectiveness"><span class="keyword">val</span> effectiveness</span> : <code class="type"><a href="Types.html#TYPEelemtype">elemtype</a> -> <a href="Types.html#TYPEelemtype">elemtype</a> -> float</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">effectiveness t1 t2</code> Calculates the effectiveness of an attack type <code class="code">t1</code>
+    to a defending pkm type <code class="code">t2</code></p>
+</div>
+</div>
+
+<pre><span id="VALtype_to_int"><span class="keyword">val</span> type_to_int</span> : <code class="type"><a href="Types.html#TYPEelemtype">elemtype</a> -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">type_to_int t</code> is the int associated with the elemtype <code class="code">t</code>.
+     Raises: <code class="code">Failure</code> with an unspecified error message if the elemtype <code class="code">t</code> 
+    is not a valid type representation.</p>
+</div>
+</div>
+
+<pre><span id="VALtype_to_string"><span class="keyword">val</span> type_to_string</span> : <code class="type"><a href="Types.html#TYPEelemtype">elemtype</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">type_to_string t</code> is the string assocaited with elemtype <code class="code">t</code>. 
+     Raises: <code class="code">Failure</code> with an unspecified error message if the elemtype <code class="code">t</code> 
+    is not a valid type representation.</p>
+</div>
+</div>
+
+<pre><span id="VALstring_to_type"><span class="keyword">val</span> string_to_type</span> : <code class="type">string -> <a href="Types.html#TYPEelemtype">elemtype</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">string_to_type s</code> is the elemtype assosciated with the string <code class="code">s</code></p>
+</div>
+</div>
+
+<pre><span id="VALint_to_type"><span class="keyword">val</span> int_to_type</span> : <code class="type">int -> <a href="Types.html#TYPEelemtype">elemtype</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">int_to_type i</code> is the type associated with the int <code class="code">i</code></p>
+</div>
+</div>
+
+<pre><span id="VALvalid_type"><span class="keyword">val</span> valid_type</span> : <code class="type">string -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">valid_type s</code> returns true iff s is a valid type</p>
+</div>
+</div>
+</body></html>

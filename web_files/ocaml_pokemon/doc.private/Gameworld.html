@@ -1,0 +1,382 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="previous" href="Attacks.html">
+<link rel="next" href="Types.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Pokemon" rel="Chapter" href="Pokemon.html">
+<link title="Command" rel="Chapter" href="Command.html">
+<link title="State" rel="Chapter" href="State.html">
+<link title="Main" rel="Chapter" href="Main.html">
+<link title="Author" rel="Chapter" href="Author.html">
+<link title="Attacks" rel="Chapter" href="Attacks.html">
+<link title="Gameworld" rel="Chapter" href="Gameworld.html">
+<link title="Types" rel="Chapter" href="Types.html"><title>Gameworld</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="Attacks.html" title="Attacks">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;<a class="post" href="Types.html" title="Types">Next</a>
+</div>
+<h1>Module <a href="type_Gameworld.html">Gameworld</a></h1>
+
+<pre><span id="MODULEGameworld"><span class="keyword">module</span> Gameworld</span>: <code class="code">sig</code> <a href="Gameworld.html">..</a> <code class="code">end</code></pre><div class="info module top">
+<div class="info-desc">
+<p>Representation of static game data.</p>
+
+<p>This module represents the data stored in game files,
+     including the room names and description. It handles loading of that 
+     data from JSON as well as querying the data.</p>
+</div>
+</div>
+<hr width="100%">
+
+<pre><span id="EXCEPTIONUnknownMovement"><span class="keyword">exception</span> UnknownMovement</span> <span class="keyword">of</span> <code class="type">string</code></pre>
+<div class="info ">
+<div class="info-desc">
+<p>Raised when an unknown direction is encountered</p>
+</div>
+</div>
+
+<pre><span id="EXCEPTIONUnBeatenCh"><span class="keyword">exception</span> UnBeatenCh</span> <span class="keyword">of</span> <code class="type">string</code></pre>
+<div class="info ">
+<div class="info-desc">
+<p>Raised when an unbeaten character prevents the game from progressing.</p>
+</div>
+</div>
+
+<pre><span id="EXCEPTIONDeadEnd"><span class="keyword">exception</span> DeadEnd</span></pre>
+<div class="info ">
+<div class="info-desc">
+<p>Raised when deadend is encountered</p>
+</div>
+</div>
+
+<pre><code><span id="TYPEcharacter"><span class="keyword">type</span> <code class="type"></code>character</span> = {</code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTcharacter.name">name</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTcharacter.description">description</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTcharacter.pokemon">pokemon</span>&nbsp;: <code class="type"><a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a></code>;</code></td>
+
+</tr></table>
+}
+
+<div class="info ">
+<div class="info-desc">
+<p>The abstract type of values representing a charcter in the game</p>
+</div>
+</div>
+
+
+<pre><span id="VALcharacter_from_json"><span class="keyword">val</span> character_from_json</span> : <code class="type"><a href="Pokemon.html#TYPEt">Pokemon.t</a> -> Yojson.Basic.t -> <a href="Gameworld.html#TYPEcharacter">character</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">character_from_json pokedex json</code> is the <code class="code">character</code> represented by <code class="code">json</code>.
+    <code class="code">pokedex</code> is used to obtain the chearacter's pokemon</p>
+</div>
+</div>
+
+<pre><code><span id="TYPEroom"><span class="keyword">type</span> <code class="type"></code>room</span> = {</code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTroom.north_room">north_room</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTroom.south_room">south_room</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTroom.east_room">east_room</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTroom.west_room">west_room</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTroom.description">description</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTroom.name">name</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTroom.characters">characters</span>&nbsp;: <code class="type"><a href="Gameworld.html#TYPEcharacter">character</a> list</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTroom.has_pokemon_center">has_pokemon_center</span>&nbsp;: <code class="type">bool</code>;</code></td>
+
+</tr></table>
+}
+
+<div class="info ">
+<div class="info-desc">
+<p>The abstract type of values representing a room in the game</p>
+</div>
+</div>
+
+
+<pre><span id="VALroom_from_json"><span class="keyword">val</span> room_from_json</span> : <code class="type"><a href="Pokemon.html#TYPEt">Pokemon.t</a> -> Yojson.Basic.t -> <a href="Gameworld.html#TYPEroom">room</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">room_from_json pokedex json</code> is the <code class="code">room</code> represented by <code class="code">json</code>.
+    <code class="code">pokedex</code> is used to obtain in-room characters' pokemon</p>
+</div>
+</div>
+
+<pre><code><span id="TYPEgame"><span class="keyword">type</span> <code class="type"></code>game</span> = {</code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTgame.rooms">rooms</span>&nbsp;: <code class="type"><a href="Gameworld.html#TYPEroom">room</a> list</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTgame.description">description</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTgame.start_room">start_room</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTgame.elite3">elite3</span>&nbsp;: <code class="type">string list</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTgame.roster_length">roster_length</span>&nbsp;: <code class="type">int</code>;</code></td>
+
+</tr></table>
+}
+
+<div class="info ">
+<div class="info-desc">
+<p>The abstract type of values representing a game</p>
+</div>
+</div>
+
+
+<pre><span id="VALgame_json"><span class="keyword">val</span> game_json</span> : <code class="type">Yojson.Basic.t -> <a href="Pokemon.html#TYPEt">Pokemon.t</a> -> <a href="Gameworld.html#TYPEgame">game</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">game_json json pokedex</code> is the <code class="code">game</code> represented by <code class="code">json</code>.
+    <code class="code">pokedex</code> is used to obtain pokemon in the game.</p>
+</div>
+</div>
+
+<pre><span id="VALget_rooms_ext"><span class="keyword">val</span> get_rooms_ext</span> : <code class="type">string -> <a href="Gameworld.html#TYPEroom">room</a> list -> <a href="Gameworld.html#TYPEroom">room</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_rooms_ext s rms</code> is the room with name <code class="code">s</code> in the list of rooms
+    <code class="code">rms</code> 
+    Raises: <code class="code">Failure</code> with an unspecified error message if <code class="code">s</code> is not a valid 
+    room name.</p>
+</div>
+</div>
+
+<pre><span id="VALget_room"><span class="keyword">val</span> get_room</span> : <code class="type"><a href="Gameworld.html#TYPEgame">game</a> -> string -> <a href="Gameworld.html#TYPEroom">room</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_room g s</code> is the room with name <code class="code">s</code> in game <code class="code">g</code> 
+    Raises: <code class="code">Failure</code> with an unspecified error message if <code class="code">s</code> is not a valid 
+    room name.
+    Raises: <code class="code">DeadEnd</code> if <code class="code">s</code> is the empty string.</p>
+</div>
+</div>
+
+<pre><span id="VALget_chars_ext"><span class="keyword">val</span> get_chars_ext</span> : <code class="type">string -> <a href="Gameworld.html#TYPEcharacter">character</a> list -> <a href="Gameworld.html#TYPEcharacter">character</a> option</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_chars_ext s chrs</code> is None if <code class="code">s</code> is not in chrs, else it is <code class="code">Some chr</code> 
+    where chr is the character with name <code class="code">s</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALget_char"><span class="keyword">val</span> get_char</span> : <code class="type"><a href="Gameworld.html#TYPEroom">room</a> -> string -> <a href="Gameworld.html#TYPEcharacter">character</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_char rm s</code> is the character in room <code class="code">rm</code> with name <code class="code">s</code>
+    Raises: <code class="code">Failure</code> with an unspecified error message if <code class="code">s</code> is not in 
+    room <code class="code">rm</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALvalid_char"><span class="keyword">val</span> valid_char</span> : <code class="type"><a href="Gameworld.html#TYPEroom">room</a> -> string -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">valid_char rm s</code> returns true iff character <code class="code">s</code> is in room <code class="code">r</code></p>
+</div>
+</div>
+
+<pre><span id="VALget_room_chars"><span class="keyword">val</span> get_room_chars</span> : <code class="type"><a href="Gameworld.html#TYPEroom">room</a> -> string list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_room_chars rm</code> is the list of character names in room <code class="code">rm</code></p>
+</div>
+</div>
+
+<pre><span id="VALstart_room"><span class="keyword">val</span> start_room</span> : <code class="type"><a href="Gameworld.html#TYPEgame">game</a> -> <a href="Gameworld.html#TYPEroom">room</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">start_room game</code> returns the start room of game <code class="code">game</code></p>
+
+<p><code class="code">start_room g</code> is the starting room of game <code class="code">g</code></p>
+</div>
+</div>
+
+<pre><span id="VALchar_pokemon"><span class="keyword">val</span> char_pokemon</span> : <code class="type"><a href="Gameworld.html#TYPEcharacter">character</a> -> <a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">char_pokemon ch</code> is the pokemon of character <code class="code">ch</code></p>
+</div>
+</div>
+
+<pre><span id="VALpokemon_center"><span class="keyword">val</span> pokemon_center</span> : <code class="type"><a href="Gameworld.html#TYPEroom">room</a> -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">pokemon_center r</code> evaluates to true/false depending on if the room has 
+    a pokemon center</p>
+</div>
+</div>
+
+<pre><span id="VALnorth_room"><span class="keyword">val</span> north_room</span> : <code class="type"><a href="Gameworld.html#TYPEgame">game</a> -> <a href="Gameworld.html#TYPEroom">room</a> -> <a href="Gameworld.html#TYPEroom">room</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">north_room g r</code> is the room to the north of room <code class="code">r</code> in game g</p>
+</div>
+</div>
+
+<pre><span id="VALsouth_room"><span class="keyword">val</span> south_room</span> : <code class="type"><a href="Gameworld.html#TYPEgame">game</a> -> <a href="Gameworld.html#TYPEroom">room</a> -> <a href="Gameworld.html#TYPEroom">room</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">south_room g r</code> is the room to the south of room <code class="code">r</code> in game g</p>
+</div>
+</div>
+
+<pre><span id="VALeast_room"><span class="keyword">val</span> east_room</span> : <code class="type"><a href="Gameworld.html#TYPEgame">game</a> -> <a href="Gameworld.html#TYPEroom">room</a> -> <a href="Gameworld.html#TYPEroom">room</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">east_room g r</code> is the room to the east of room <code class="code">r</code> in game g</p>
+</div>
+</div>
+
+<pre><span id="VALwest_room"><span class="keyword">val</span> west_room</span> : <code class="type"><a href="Gameworld.html#TYPEgame">game</a> -> <a href="Gameworld.html#TYPEroom">room</a> -> <a href="Gameworld.html#TYPEroom">room</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">west_room g r</code> is the room to the west of room <code class="code">r</code> in game g</p>
+</div>
+</div>
+
+<pre><span id="VALroom_desc"><span class="keyword">val</span> room_desc</span> : <code class="type"><a href="Gameworld.html#TYPEgame">game</a> -> string -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">room_desc g r</code> is the description of the room named <code class="code">r</code> in game g</p>
+</div>
+</div>
+
+<pre><span id="VALroom_name"><span class="keyword">val</span> room_name</span> : <code class="type"><a href="Gameworld.html#TYPEroom">room</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">room_name r</code> is the name of room <code class="code">r</code></p>
+</div>
+</div>
+
+<pre><span id="VALroom_to_visit"><span class="keyword">val</span> room_to_visit</span> : <code class="type"><a href="Gameworld.html#TYPEgame">game</a> -> <a href="Gameworld.html#TYPEroom">room</a> -> string -> <a href="Gameworld.html#TYPEroom">room</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">room_to_visit g r s</code>  is the room to visit in game <code class="code">g</code> when one moves
+    in the direction <code class="code">s</code> in room <code class="code">r</code>
+    Raises: UnknownMovement if <code class="code">s</code> is not a cardinal direction.
+    Raises: DeadEnd if the direction <code class="code">s</code> leads to a dead end.</p>
+</div>
+</div>
+
+<pre><span id="VALelite3"><span class="keyword">val</span> elite3</span> : <code class="type"><a href="Gameworld.html#TYPEgame">game</a> -> string list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">elite3 g</code> returns the 'elite 3' opponents in game <code class="code">g</code> in the right order</p>
+</div>
+</div>
+
+<pre><span id="VALlist_chars"><span class="keyword">val</span> list_chars</span> : <code class="type"><a href="Gameworld.html#TYPEgame">game</a> -> string list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">list_chars g</code> returns a list of all character names in game <code class="code">g</code></p>
+</div>
+</div>
+
+<pre><span id="VALnon_elites"><span class="keyword">val</span> non_elites</span> : <code class="type"><a href="Gameworld.html#TYPEgame">game</a> -> string list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">non_elites g</code> returns a list of all non-elite character names in game <code class="code">g</code></p>
+</div>
+</div>
+
+<pre><span id="VALchar_diff"><span class="keyword">val</span> char_diff</span> : <code class="type"><a href="Gameworld.html#TYPEgame">game</a> -> string list -> string list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">char_diff g ch</code> returns all non-elite character names which are not in 
+    <code class="code">ch</code> but are in game <code class="code">g</code></p>
+</div>
+</div>
+
+<pre><span id="VALget_char_room"><span class="keyword">val</span> get_char_room</span> : <code class="type">string -> <a href="Gameworld.html#TYPEgame">game</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_char_room c g</code> returns the room which character <code class="code">c</code> is in in game <code class="code">g</code>.
+    Raises: <code class="code">Failure</code> with an unspecified error message if the character <code class="code">c</code> 
+    is not in any room.</p>
+</div>
+</div>
+
+<pre><span id="VALin_elite3"><span class="keyword">val</span> in_elite3</span> : <code class="type"><a href="Gameworld.html#TYPEgame">game</a> -> string -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">in_elite3 g ch</code> returns whether the character named <code class="code">ch</code> is in the 
+    'elite 3'</p>
+</div>
+</div>
+
+<pre><span id="VALroster_length"><span class="keyword">val</span> roster_length</span> : <code class="type"><a href="Gameworld.html#TYPEgame">game</a> -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">roster_length g</code> returns the roster length in game <code class="code">g</code></p>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,946 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Pokemon" rel="Chapter" href="Pokemon.html">
+<link title="Command" rel="Chapter" href="Command.html">
+<link title="State" rel="Chapter" href="State.html">
+<link title="Main" rel="Chapter" href="Main.html">
+<link title="Author" rel="Chapter" href="Author.html">
+<link title="Attacks" rel="Chapter" href="Attacks.html">
+<link title="Gameworld" rel="Chapter" href="Gameworld.html">
+<link title="Types" rel="Chapter" href="Types.html"><title>Index of values</title>
+</head>
+<body>
+<div class="navbar">&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;</div>
+<h1>Index of values</h1>
+<table>
+<tr><td align="left"><div>A</div></td></tr>
+<tr><td><a href="Pokemon.html#VALadd_hp">add_hp</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">add_hp p</code> returns pokemon <code class="code">p</code> with its hp restores to full</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALadd_xp">add_xp</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">add_xp p i</code> returns pokemon <code class="code">p</code> with its xp increased by <code class="code">i</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Main.html#VALai_battle">ai_battle</a> [<a href="Main.html">Main</a>]</td>
+<td><div class="info">
+<p><code class="code">ai_battle game pkdex atdir st pk1 pk2 battle_start char_name atks</code> 
+    processes  <code class="code">char_name</code>'s pokemon <code class="code">pk2</code> battling <code class="code">pk1</code> with
+    <code class="code">new_st_opt</code> containing modified state data from <code class="code">pk1</code> battling <code class="code">pk2</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Main.html#VALai_battle_action">ai_battle_action</a> [<a href="Main.html">Main</a>]</td>
+<td><div class="info">
+<p><code class="code">ai_battle_action game pkdex atdir st ai_pk pk2 char_name</code> is a tuple
+      containing whether the player's pokemon <code class="code">pk2</code> is dead after being 
+      attacked by <code class="code">char_name</code>'s pokemon <code class="code">ai_pk</code> in state <code class="code">st</code>, the new state
+      after damage has been dealt to <code class="code">pk2</code> and the new pokemon <code class="code">pk2</code> after
+       damage has been dealt to it.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALalive_pokemon">alive_pokemon</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">alive_pokemon st</code> is a assosciation list of the pokemon alive in 
+    state <code class="code">st</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALalive_string">alive_string</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">alive_string st</code> is a human-readble string which contains the hp and
+   xp of all living pokemon</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Attacks.html#VALatk_accu">atk_accu</a> [<a href="Attacks.html">Attacks</a>]</td>
+<td><div class="info">
+<p><code class="code">atk_accu s a</code> is the accuracy of the attack with name <code class="code">s</code> as defined
+    in the attack directory <code class="code">a</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Attacks.html#VALatk_desc">atk_desc</a> [<a href="Attacks.html">Attacks</a>]</td>
+<td><div class="info">
+<p><code class="code">atk_desc s a</code> is the description of the attack with name <code class="code">s</code> as defined 
+    in the attack directory <code class="code">a</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Attacks.html#VALatk_dmg">atk_dmg</a> [<a href="Attacks.html">Attacks</a>]</td>
+<td><div class="info">
+<p><code class="code">atk_dmg a</code> is the damage of attack <code class="code">a</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Attacks.html#VALatk_dmg_dict">atk_dmg_dict</a> [<a href="Attacks.html">Attacks</a>]</td>
+<td><div class="info">
+<p><code class="code">atk_dmg_dict s a</code> is the damage give by attack with name <code class="code">s</code> 
+    as defined in the attack directory <code class="code">a</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Attacks.html#VALattack_dict">attack_dict</a> [<a href="Attacks.html">Attacks</a>]</td>
+<td><div class="info">
+<p><code class="code">attack_dict j</code> is the set of attacks that <code class="code">j</code> represents.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALattack_hit">attack_hit</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">attack_hit a</code> is truee iff the attack <code class="code">a</code> successfult hits an opponent, a
+    random outcome dependent on <code class="code">a</code>'s accuracy.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Attacks.html#VALattack_json">attack_json</a> [<a href="Attacks.html">Attacks</a>]</td>
+<td><div class="info">
+<p><code class="code">attack_json json</code> is the <code class="code">attack</code> represented by <code class="code">json</code></p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>B</div></td></tr>
+<tr><td><a href="Main.html#VALbattle_action">battle_action</a> [<a href="Main.html">Main</a>]</td>
+<td><div class="info">
+<p><code class="code">battle_action game pkdex atdir st pk1 pk2 atk_s char_name</code> is a tuple
+    containing whether <code class="code">char_name</code>'s pokemon <code class="code">pk2</code> is dead after being attacked 
+    by <code class="code">pk1</code> in state <code class="code">st</code> with attack <code class="code">atk_s</code>, the new state after 
+    damage has been dealt to <code class="code">pk2</code> and the new pokemon <code class="code">pk2</code> after damage has 
+    been dealt to it.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Main.html#VALbattle_loop">battle_loop</a> [<a href="Main.html">Main</a>]</td>
+<td><div class="info">
+<p><code class="code">battle_loop game pkdex atdir st pk1 pk2 battle_start char_name</code> prompts 
+    the user to enter a command, then parses that command, matching it with the 
+    correct command evaluation branch and continuing the <code class="code">game</code> whiles 
+    potentially updating values in <code class="code">st</code>, <code class="code">pk1</code> and <code class="code">pk2</code> , or matches improper 
+    commands with descriptive error messages which then prompt the user to 
+    enter a better command.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Main.html#VALbattle_processing">battle_processing</a> [<a href="Main.html">Main</a>]</td>
+<td><div class="info">
+<p><code class="code">battle_processing game pkdex atdir st pk1 pk2 battle_start char_name atks</code>
+    allows a user to pick one of the player's current pokemon <code class="code">pk1</code> moves 
+    <code class="code">atks</code> in state <code class="code">st</code>.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>C</div></td></tr>
+<tr><td><a href="Pokemon.html#VALchange_hp">change_hp</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">change_hp p i</code> returns pokemon <code class="code">p</code> with its hp increased by <code class="code">i</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gameworld.html#VALchar_diff">char_diff</a> [<a href="Gameworld.html">Gameworld</a>]</td>
+<td><div class="info">
+<p><code class="code">char_diff g ch</code> returns all non-elite character names which are not in 
+    <code class="code">ch</code> but are in game <code class="code">g</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gameworld.html#VALchar_pokemon">char_pokemon</a> [<a href="Gameworld.html">Gameworld</a>]</td>
+<td><div class="info">
+<p><code class="code">char_pokemon ch</code> is the pokemon of character <code class="code">ch</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gameworld.html#VALcharacter_from_json">character_from_json</a> [<a href="Gameworld.html">Gameworld</a>]</td>
+<td><div class="info">
+<p><code class="code">character_from_json pokedex json</code> is the <code class="code">character</code> represented by <code class="code">json</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Main.html#VALcharacters">characters</a> [<a href="Main.html">Main</a>]</td>
+<td><div class="info">
+<p><code class="code">characters</code> creates an empty string list of characters</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALchars_left">chars_left</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">chars_left g st</code> is the list of non-elite character in game <code class="code">g</code> which
+    still have to be defeated in state <code class="code">st</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALchars_remaining">chars_remaining</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">chars_remaining g st</code> is a list of tuples of non-elite character 
+   which still have to be defeated in state <code class="code">st</code> and the rooms their in, in
+    game <code class="code">g</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Main.html#VALchoose_character">choose_character</a> [<a href="Main.html">Main</a>]</td>
+<td><div class="info">
+<p><code class="code">choose_character f pokedex</code> lets the player choose their character and 
+    pokemon in the game represented by file <code class="code">f</code> and creates an initial state 
+    with that character.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALcreate_roster">create_roster</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">create_roster fst g p</code> is a <code class="code">PokemonRoster</code> whose length is specified in
+   game <code class="code">g</code> and which contains the pokemon <code class="code">fst</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALcurr_pokemon">curr_pokemon</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">curr_pokemon t</code> is the pokemon of the player in state <code class="code">t</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALcurrent_room">current_room</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">current_room t</code> is the current room of the player in state <code class="code">t</code></p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>D</div></td></tr>
+<tr><td><a href="Pokemon.html#VALdamage_done">damage_done</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">damage_done attacker defender attack</code> returns the damage done by a single
+    attack provided the attacking pokemon object <code class="code">attacker</code>, defending pokemon
+    object <code class="code">defender</code>, and the <code class="code">attack</code> being used</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Command.html#VALdecision">decision</a> [<a href="Command.html">Command</a>]</td>
+<td><div class="info">
+<p><code class="code">decision str_list</code> is the command represented by <code class="code">str_list</code>
+    Raises: <code class="code">Empty</code> if <code class="code">str_list</code> is the empty list or a list of empty strings
+    Raises: <code class="code">Malformed</code> if the command represented by <code class="code">str_list</code>
+     is malformed</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALdefeated_char">defeated_char</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">defeated_char st s</code> is a state with the defeated character <code class="code">s</code> added 
+    to the player's defeated characters in state <code class="code">st</code></p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>E</div></td></tr>
+<tr><td><a href="Gameworld.html#VALeast_room">east_room</a> [<a href="Gameworld.html">Gameworld</a>]</td>
+<td><div class="info">
+<p><code class="code">east_room g r</code> is the room to the east of room <code class="code">r</code> in game g</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Types.html#VALeffecchart">effecchart</a> [<a href="Types.html">Types</a>]</td>
+<td><div class="info">
+<p><code class="code">effechart</code> is a chart used to represent how effective one type is against
+    another type.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Types.html#VALeffectiveness">effectiveness</a> [<a href="Types.html">Types</a>]</td>
+<td><div class="info">
+<p><code class="code">effectiveness t1 t2</code> Calculates the effectiveness of an attack type <code class="code">t1</code>
+    to a defending pkm type <code class="code">t2</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gameworld.html#VALelite3">elite3</a> [<a href="Gameworld.html">Gameworld</a>]</td>
+<td><div class="info">
+<p><code class="code">elite3 g</code> returns the 'elite 3' opponents in game <code class="code">g</code> in the right order</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Main.html#VALeval_loop">eval_loop</a> [<a href="Main.html">Main</a>]</td>
+<td><div class="info">
+<p><code class="code">eval_loop game pkdex atdir st</code> prompts the user to enter a command, then
+    parses that command, matching it with the correct command evaluation branch
+    and continuing the game <code class="code">game</code> whiles potentially updating values in <code class="code">st</code>, 
+    or matches improper commands with descriptive error messages which then 
+    prompt the user to enter a better command.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Main.html#VALextract_state">extract_state</a> [<a href="Main.html">Main</a>]</td>
+<td><div class="info">
+<p><code class="code">extract_state curr_st new_st</code> is the state represented by the 
+    result <code class="code">new_st</code>, with <code class="code">curr_st</code> being the previous state.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>F</div></td></tr>
+<tr><td><a href="Pokemon.html#VALfrom_json">from_json</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">from_json j</code> is the set of pokemon(pokedex) that <code class="code">j</code> represents.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>G</div></td></tr>
+<tr><td><a href="Gameworld.html#VALgame_json">game_json</a> [<a href="Gameworld.html">Gameworld</a>]</td>
+<td><div class="info">
+<p><code class="code">game_json json pokedex</code> is the <code class="code">game</code> represented by <code class="code">json</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALgame_over">game_over</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">game_over g st</code> is true iff the user in state <code class="code">st</code> has won the game 
+   <code class="code">g</code> ie.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Attacks.html#VALget_accuracy">get_accuracy</a> [<a href="Attacks.html">Attacks</a>]</td>
+<td><div class="info">
+<p><code class="code">get_accuracy a</code> returns the accuracy of the attack <code class="code">a</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Attacks.html#VALget_atk">get_atk</a> [<a href="Attacks.html">Attacks</a>]</td>
+<td><div class="info">
+<p><code class="code">get_atk s a</code> is the attack with name <code class="code">s</code> as defined in the attack 
+    directory <code class="code">a</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALget_atk">get_atk</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">get_atk p</code> returns the attack stat of pokemon <code class="code">p</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALget_atk_float">get_atk_float</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">get_atk_float p</code> returns the attack stat of pokemon <code class="code">p</code> as a float</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALget_attacks_list">get_attacks_list</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">get_attacks_list p</code> returns the attacks of pokemon <code class="code">p</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gameworld.html#VALget_char">get_char</a> [<a href="Gameworld.html">Gameworld</a>]</td>
+<td><div class="info">
+<p><code class="code">get_char rm s</code> is the character in room <code class="code">rm</code> with name <code class="code">s</code>
+    Raises: <code class="code">Failure</code> with an unspecified error message if <code class="code">s</code> is not in 
+    room <code class="code">rm</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gameworld.html#VALget_char_room">get_char_room</a> [<a href="Gameworld.html">Gameworld</a>]</td>
+<td><div class="info">
+<p><code class="code">get_char_room c g</code> returns the room which character <code class="code">c</code> is in in game <code class="code">g</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gameworld.html#VALget_chars_ext">get_chars_ext</a> [<a href="Gameworld.html">Gameworld</a>]</td>
+<td><div class="info">
+<p><code class="code">get_chars_ext s chrs</code> is None if <code class="code">s</code> is not in chrs, else it is <code class="code">Some chr</code> 
+    where chr is the character with name <code class="code">s</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALget_def_float">get_def_float</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">get_def_float p</code> returns the defense stat of pokemon <code class="code">p</code> as a float</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALget_description">get_description</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">get_description p</code> returns the description of pekemon <code class="code">p</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Attacks.html#VALget_elemtype">get_elemtype</a> [<a href="Attacks.html">Attacks</a>]</td>
+<td><div class="info">
+<p><code class="code">get_elemtype atk</code> is the <code class="code">elemtype</code> of <code class="code">atk</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALget_hp">get_hp</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">get_hp p</code> returns the hp of pekemon <code class="code">p</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALget_hp_float">get_hp_float</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">get_hp_float p</code> returns the hp stat of pokemon <code class="code">p</code> as a float</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALget_level">get_level</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">get_level p</code> is the current level of pokemon <code class="code">p</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALget_level_float">get_level_float</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">get_level_float p</code> is the current level of pokemon <code class="code">p</code> as a float</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALget_max_hp">get_max_hp</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">get_max_hp p</code> returns the maximum hp value of a pokemon</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALget_max_hp_float">get_max_hp_float</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">get_max_hp_float p</code> returns the max hp stat of pokemon <code class="code">p</code> as a float</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALget_name">get_name</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">get_name p</code> returns the name of pekemon <code class="code">p</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALget_pokemon">get_pokemon</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">get_pokemon p s</code> returns the pokemon assosciated with the string s 
+    according to the pokedex<code class="code">p</code> 
+    Raises: <code class="code">Failure</code> with an unspecified error message if the pokemon <code class="code">s</code> 
+    is not a valid pokemon in pokedex <code class="code">p</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gameworld.html#VALget_room">get_room</a> [<a href="Gameworld.html">Gameworld</a>]</td>
+<td><div class="info">
+<p><code class="code">get_room g s</code> is the room with name <code class="code">s</code> in game <code class="code">g</code> 
+    Raises: <code class="code">Failure</code> with an unspecified error message if <code class="code">s</code> is not a valid 
+    room name.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gameworld.html#VALget_room_chars">get_room_chars</a> [<a href="Gameworld.html">Gameworld</a>]</td>
+<td><div class="info">
+<p><code class="code">get_room_chars rm</code> is the list of character names in room <code class="code">rm</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gameworld.html#VALget_rooms_ext">get_rooms_ext</a> [<a href="Gameworld.html">Gameworld</a>]</td>
+<td><div class="info">
+<p><code class="code">get_rooms_ext s rms</code> is the room with name <code class="code">s</code> in the list of rooms
+    <code class="code">rms</code> 
+    Raises: <code class="code">Failure</code> with an unspecified error message if <code class="code">s</code> is not a valid 
+    room name.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALget_type">get_type</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">get_type p</code> returns the elemtype of pekemon <code class="code">p</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALget_xp">get_xp</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">get_xp p</code> returns the xp of pekemon <code class="code">p</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALgo">go</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">go dir g st</code> is <code class="code">r</code> if attempting to go in the direction <code class="code">dir</code> in state 
+    <code class="code">st</code> and game <code class="code">g</code> results in <code class="code">r</code> where in <code class="code">st'</code> the 
+    player is now located in the room to which <code class="code">dir</code> leads unless the <code class="code">dir</code>
+     is a dead end.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Main.html#VALgo_cmd">go_cmd</a> [<a href="Main.html">Main</a>]</td>
+<td><div class="info">
+<p><code class="code">go_cmd game pkdex atdir st s</code> updates the state <code class="code">st</code> if moving in the 
+    direction <code class="code">s</code> in game <code class="code">game</code> leads to a valid state.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>H</div></td></tr>
+<tr><td><a href="Main.html#VALheal_cmd">heal_cmd</a> [<a href="Main.html">Main</a>]</td>
+<td><div class="info">
+<p><code class="code">heal_cmd game pkdex atdir st p curr_room</code> if the <code class="code">curr_room</code> has a pokemon 
+    center,  the state <code class="code">st</code> is updated with a healed pokemon <code class="code">p</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALheal_pokemon">heal_pokemon</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">heal_pokemon p</code> returns same pokemon <code class="code">p</code> with full hp</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Author.html#VALhours_worked">hours_worked</a> [<a href="Author.html">Author</a>]</td>
+<td><div class="info">
+<p><code class="code">hours_worked</code> is a list of the number of hours each team member
+    worked on this assignment.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>I</div></td></tr>
+<tr><td><a href="State.html#VALin_alive">in_alive</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">in_alive st s</code> is true iff pokemon named <code class="code">s</code> is in this state's <code class="code">st</code> 
+   current roster and is alive.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gameworld.html#VALin_elite3">in_elite3</a> [<a href="Gameworld.html">Gameworld</a>]</td>
+<td><div class="info">
+<p><code class="code">in_elite3 g ch</code> returns whether the character named <code class="code">ch</code> is in the 
+    'elite 3'</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALinit_state">init_state</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">init_state g p poke player</code> is the initial state of the game <code class="code">g</code>
+    with starting pokemon <code class="code">poke</code> and a player named <code class="code">player</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Main.html#VALinput_player_name">input_player_name</a> [<a href="Main.html">Main</a>]</td>
+<td><div class="info">
+<p><code class="code">input_player_name ()</code> reads and returns the user's inputted name.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Types.html#VALint_to_type">int_to_type</a> [<a href="Types.html">Types</a>]</td>
+<td><div class="info">
+<p><code class="code">int_to_type i</code> is the type associated with the int <code class="code">i</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALis_dead">is_dead</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">is_dead p</code> returns True iff a pokemon has no or negative health</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>L</div></td></tr>
+<tr><td><a href="Pokemon.html#VALlevel_stats">level_stats</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">level_stats st</code> represents the new stats of a pokemon with stats <code class="code">st</code>, 
+    after it has leveled up.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALlevel_up">level_up</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">level_up pkmn</code> returns a new pokemon with slightly modified stats
+    based on the pokemon <code class="code">pkmn</code> passed to it.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gameworld.html#VALlist_chars">list_chars</a> [<a href="Gameworld.html">Gameworld</a>]</td>
+<td><div class="info">
+<p><code class="code">list_chars g</code> returns a list of all character names in game <code class="code">g</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALlvlpkmn">lvlpkmn</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">lvlpkmn int pkmn</code> levels up pokemon <code class="code">pkmn</code>,  <code class="code">int</code> times</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>M</div></td></tr>
+<tr><td><a href="Main.html#VALmain">main</a> [<a href="Main.html">Main</a>]</td>
+<td><div class="info">
+<p><code class="code">main ()</code> starts the game and prompts the user to enter a game file to 
+    load</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Attacks.html#VALmake_attack_dict">make_attack_dict</a> [<a href="Attacks.html">Attacks</a>]</td>
+<td><div class="info">
+<p><code class="code">make_attack_dict p_lst pokedex</code> is a <code class="code">AttackMap</code> containing all the attacks
+    in <code class="code">a_lst</code>, where <code class="code">attack_map</code> is the current running total of attacks.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALmake_poke_dict">make_poke_dict</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">make_poke_dict p_lst pokedex</code> is a <code class="code">PokemonMap</code> containing all the pokemon
+    in <code class="code">p_lst</code>, where <code class="code">pokedex</code> is the current running total of pokemon.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALmake_roster">make_roster</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">make_roster pknd curr p</code> is a <code class="code">PokemonRoster</code> with <code class="code">pknd</code> elements where
+   <code class="code">curr</code> is an accumulator for the roster.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>N</div></td></tr>
+<tr><td><a href="Main.html#VALnew_pokemon">new_pokemon</a> [<a href="Main.html">Main</a>]</td>
+<td><div class="info">
+<p><code class="code">new_pokemon game st</code> prompts the user to select a new pokemon from their
+    roster in game<code class="code">game</code>, updates the game state <code class="code">st</code> with their selection, 
+    and returns this new state.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gameworld.html#VALnon_elites">non_elites</a> [<a href="Gameworld.html">Gameworld</a>]</td>
+<td><div class="info">
+<p><code class="code">non_elites g</code> returns a list of all non-elite character names in game <code class="code">g</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gameworld.html#VALnorth_room">north_room</a> [<a href="Gameworld.html">Gameworld</a>]</td>
+<td><div class="info">
+<p><code class="code">north_room g r</code> is the room to the north of room <code class="code">r</code> in game g</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>O</div></td></tr>
+<tr><td><a href="Pokemon.html#VALopp_move">opp_move</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">opp_move attks</code> is a selected attack from the list of attacks <code class="code">attks</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALopps_left">opps_left</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">opps_left g st</code> is the list of characters in the current room in state 
+    <code class="code">st</code> within game <code class="code">g</code> which haven't been defeated.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>P</div></td></tr>
+<tr><td><a href="Command.html#VALparse">parse</a> [<a href="Command.html">Command</a>]</td>
+<td><div class="info">
+<p><code class="code">parse str</code> parses a player's input into a <code class="code">command</code>, as follows.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Attacks.html#VALparse_attacks">parse_attacks</a> [<a href="Attacks.html">Attacks</a>]</td>
+<td><div class="info">
+<p><code class="code">parse_attacks json</code> is the list of <code class="code">attack</code> represented by <code class="code">json</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Main.html#VALplay_game">play_game</a> [<a href="Main.html">Main</a>]</td>
+<td><div class="info">
+<p><code class="code">play_game f</code> starts the game in file <code class="code">f</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALplayer_name">player_name</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">player_name t</code> is the current name of the player in state <code class="code">t</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALpoke_list">poke_list</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">poke_list json</code> is the list of <code class="code">pokemon</code> represented by <code class="code">json</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALpokedex">pokedex</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">pokedex json</code> is the <code class="code">PokemonMap</code> that <code class="code">json</code> represents.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALpokemon_attack">pokemon_attack</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">pokemon_attack p1 p2 atk</code> is pokemon <code class="code">p2</code> after taking damage 
+    from pokemon <code class="code">p1</code> using attack <code class="code">atk</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gameworld.html#VALpokemon_center">pokemon_center</a> [<a href="Gameworld.html">Gameworld</a>]</td>
+<td><div class="info">
+<p><code class="code">pokemon_center r</code> evaluates to true/false depending on if the room has 
+    a pokemon center</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALpokemon_from_json">pokemon_from_json</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">pokemon_from_json json</code> is the <code class="code">pokemon</code> represented by <code class="code">json</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALpokemon_left">pokemon_left</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">pokemon_left st</code> is true iff there is a pokemon alive in the roster in
+   state <code class="code">st</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALpokemon_of_type">pokemon_of_type</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">pokemon_pf_type s p lst</code> returns a list of pokemon from pokedex <code class="code">p</code> of 
+   type <code class="code">s</code> where <code class="code">lst</code> is the starting value.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALpokemon_of_type_ext">pokemon_of_type_ext</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">pokemon_of_type_ext s p lst</code> returns a list of pokemon from pokedex <code class="code">p</code> of 
+   type <code class="code">s</code> where <code class="code">lst</code> is a current running total.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Main.html#VALprcs_sens">prcs_sens</a> [<a href="Main.html">Main</a>]</td>
+<td><div class="info">
+<p><code class="code">prcs_lvl s</code> returns the input string <code class="code">s</code> with the first letter of each
+    word capitalized, the remaining letters lowercase, and only one space in
+    between words</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Main.html#VALprint_battle_effects">print_battle_effects</a> [<a href="Main.html">Main</a>]</td>
+<td><div class="info">
+<p><code class="code">print_battle_effects pk1 new_pk2 pk1_name pk2_name attack_s</code> prints an
+    organized battle summary for the user after <code class="code">pk1</code> with name <code class="code">pk1_name</code>
+    attacks <code class="code">new_pk2</code> with name <code class="code">pk2_name</code> with <code class="code">attack_s</code>.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>R</div></td></tr>
+<tr><td><a href="Pokemon.html#VALrandom_pokemon">random_pokemon</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">random_pokemon p</code> returns a random pokemon</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALready_to_level_up">ready_to_level_up</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">ready_to_level_up p</code> returns True iff pokemon <code class="code">p</code> jas enough xp to 
+    level up</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Command.html#VALremove_spaces">remove_spaces</a> [<a href="Command.html">Command</a>]</td>
+<td><div class="info">
+<p><code class="code">remove_spaces str_list ongoing_list</code> is <code class="code">str_list</code> with all elements 
+    which are empty strings removed where <code class="code">ongoing_list</code> is the computed value
+    so far.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gameworld.html#VALroom_desc">room_desc</a> [<a href="Gameworld.html">Gameworld</a>]</td>
+<td><div class="info">
+<p><code class="code">room_desc g r</code> is the description of the room named <code class="code">r</code> in game g</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gameworld.html#VALroom_from_json">room_from_json</a> [<a href="Gameworld.html">Gameworld</a>]</td>
+<td><div class="info">
+<p><code class="code">room_from_json pokedex json</code> is the <code class="code">room</code> represented by <code class="code">json</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gameworld.html#VALroom_name">room_name</a> [<a href="Gameworld.html">Gameworld</a>]</td>
+<td><div class="info">
+<p><code class="code">room_name r</code> is the name of room <code class="code">r</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gameworld.html#VALroom_to_visit">room_to_visit</a> [<a href="Gameworld.html">Gameworld</a>]</td>
+<td><div class="info">
+<p><code class="code">room_to_visit g r s</code>  is the room to visit in game <code class="code">g</code> when one moves
+    in the direction <code class="code">s</code> in room <code class="code">r</code>
+    Raises: UnknownMovement if <code class="code">s</code> is not a cardinal direction.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gameworld.html#VALroster_length">roster_length</a> [<a href="Gameworld.html">Gameworld</a>]</td>
+<td><div class="info">
+<p><code class="code">roster_length g</code> returns the roster length in game <code class="code">g</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Main.html#VALrules_msg">rules_msg</a> [<a href="Main.html">Main</a>]</td>
+<td><div class="info">
+<p><code class="code">rules_msg</code> is a string representing the rules of the game.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>S</div></td></tr>
+<tr><td><a href="Main.html#VALscale_lvl">scale_lvl</a> [<a href="Main.html">Main</a>]</td>
+<td><div class="info">
+<p><code class="code">scale_lvl st</code> is a pseudo-random integer scaled to be relatively and 
+    randomly less than the current pokemon's level in <code class="code">st</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Main.html#VALscale_lvl_trainer">scale_lvl_trainer</a> [<a href="Main.html">Main</a>]</td>
+<td><div class="info">
+<p><code class="code">scale_lvl_trainer pkm st</code> is pokemon <code class="code">pkm</code> levelled up a number of times.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Main.html#VALselect_pokemon">select_pokemon</a> [<a href="Main.html">Main</a>]</td>
+<td><div class="info">
+<p><code class="code">select_pokemon f pokedex game t player</code> lets the player <code class="code">player</code> pick a 
+    pokemon from a list of pokemon <code class="code">t</code> in the game <code class="code">g</code> represented by file <code class="code">f</code>
+     and creates an initial state with that character.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gameworld.html#VALsouth_room">south_room</a> [<a href="Gameworld.html">Gameworld</a>]</td>
+<td><div class="info">
+<p><code class="code">south_room g r</code> is the room to the south of room <code class="code">r</code> in game g</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Gameworld.html#VALstart_room">start_room</a> [<a href="Gameworld.html">Gameworld</a>]</td>
+<td><div class="info">
+<p><code class="code">start_room game</code> returns the start room of game <code class="code">game</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALstats_json">stats_json</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">stats_json json</code> is the <code class="code">stats</code> represented by <code class="code">json</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALstats_string">stats_string</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">stats_string st</code> is a human-readble string which contains the hp and 
+   xp of all pokemon in the player's current roster</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALstring_roster">string_roster</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">string_roster a</code> is a human-readble string which contains the 
+    hp and xp of all pokemons in the list <code class="code">a</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Types.html#VALstring_to_type">string_to_type</a> [<a href="Types.html">Types</a>]</td>
+<td><div class="info">
+<p><code class="code">string_to_type s</code> is the elemtype assosciated with the string <code class="code">s</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALstringify_opps">stringify_opps</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">stringify_opps g st</code> is a string containing the non-elite trainers left 
+    unbeaten in <code class="code">st</code> and the rooms they are in in game <code class="code">g</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALswitch_poke">switch_poke</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">switch_poke st p</code> is a state with the player's current pokemon in state 
+    <code class="code">st</code> updated to be pokemon <code class="code">p</code></p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>T</div></td></tr>
+<tr><td><a href="State.html#VALtry_to_heal">try_to_heal</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">try_to_heal p st</code> returns pokemon <code class="code">p</code> in the roster <code class="code">st</code> with increased hp 
+   as an option if it is one of the player's pokemon in state <code class="code">st</code> or None if 
+   the player does not have that pokemon.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Types.html#VALtype_to_int">type_to_int</a> [<a href="Types.html">Types</a>]</td>
+<td><div class="info">
+<p><code class="code">type_to_int t</code> is the int associated with the elemtype <code class="code">t</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Types.html#VALtype_to_string">type_to_string</a> [<a href="Types.html">Types</a>]</td>
+<td><div class="info">
+<p><code class="code">type_to_string t</code> is the string assocaited with elemtype <code class="code">t</code>.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>U</div></td></tr>
+<tr><td><a href="Pokemon.html#VALupdate_lvl">update_lvl</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">update_lvl p1 p2</code> Updates the pokemon <code class="code">p1</code> stats if it satisfies the 
+    requirements set by ready_to_level_up which is partly dependent on pokemon
+    <code class="code">p2</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALupdate_pokemon">update_pokemon</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">update_pokemon st p</code> is a state with the player's pokemon in state 
+    <code class="code">st</code> updated to be pokemon <code class="code">p</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALupdate_roster">update_roster</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">update_roster p st</code> replaces pokemon <code class="code">p</code> in the player's roster in <code class="code">st</code>.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>V</div></td></tr>
+<tr><td><a href="Gameworld.html#VALvalid_char">valid_char</a> [<a href="Gameworld.html">Gameworld</a>]</td>
+<td><div class="info">
+<p><code class="code">valid_char rm s</code> returns true iff character <code class="code">s</code> is in room <code class="code">r</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Pokemon.html#VALvalid_move">valid_move</a> [<a href="Pokemon.html">Pokemon</a>]</td>
+<td><div class="info">
+<p><code class="code">valid_move atks s</code> returns whether move <code class="code">s</code> is in attack list <code class="code">atks</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Types.html#VALvalid_type">valid_type</a> [<a href="Types.html">Types</a>]</td>
+<td><div class="info">
+<p><code class="code">valid_type s</code> returns true iff s is a valid type</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALvisited_rooms">visited_rooms</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">visited_room st</code> is the visited rooms in the state <code class="code">st</code></p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>W</div></td></tr>
+<tr><td><a href="Gameworld.html#VALwest_room">west_room</a> [<a href="Gameworld.html">Gameworld</a>]</td>
+<td><div class="info">
+<p><code class="code">west_room g r</code> is the room to the west of room <code class="code">r</code> in game g</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALwild_pokemon">wild_pokemon</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">wild_pokemon l p</code> returns a random pokemon option from the set of pokemon
+   <code class="code">p</code> levelled up <code class="code">l</code> times.</p>
+
+</div>
+</td></tr>
+</table>
+</body>
+</html>

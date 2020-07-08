@@ -1,0 +1,312 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="previous" href="Command.html">
+<link rel="next" href="Main.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Pokemon" rel="Chapter" href="Pokemon.html">
+<link title="Command" rel="Chapter" href="Command.html">
+<link title="State" rel="Chapter" href="State.html">
+<link title="Main" rel="Chapter" href="Main.html">
+<link title="Author" rel="Chapter" href="Author.html">
+<link title="Attacks" rel="Chapter" href="Attacks.html">
+<link title="Gameworld" rel="Chapter" href="Gameworld.html">
+<link title="Types" rel="Chapter" href="Types.html"><title>State</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="Command.html" title="Command">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;<a class="post" href="Main.html" title="Main">Next</a>
+</div>
+<h1>Module <a href="type_State.html">State</a></h1>
+
+<pre><span id="MODULEState"><span class="keyword">module</span> State</span>: <code class="code">sig</code> <a href="State.html">..</a> <code class="code">end</code></pre><div class="info module top">
+<div class="info-desc">
+<p>Representation of dynamic game state.</p>
+
+<p>This module represents the state of a game as it is being played, 
+     including the player's current room, the rooms that have been visited,
+     and functions that cause the state to change</p>
+</div>
+</div>
+<hr width="100%">
+
+<pre><span id="MODULEPokemonRoster"><span class="keyword">module</span> <a href="State.PokemonRoster.html">PokemonRoster</a></span>: <code class="type">Stdlib.Map.Make</code><code class="code">(</code><code class="code">sig</code></pre><div class="sig_block">
+<pre><span id="TYPEt"><span class="keyword">type</span> <code class="type"></code>t</span> = <code class="type">string</code> </pre>
+
+
+<pre><span id="VALcompare"><span class="keyword">val</span> compare</span> : <code class="type">'a -> 'a -> int</code></pre></div>
+<pre><code class="code">end</code><code class="code">)</code></pre><div class="info">
+<p>A <code class="code">PokemonRoster</code> maps pokemon names to <code class="code">pokemon</code>.</p>
+
+</div>
+
+<pre><span id="VALmake_roster"><span class="keyword">val</span> make_roster</span> : <code class="type">int -><br>       <a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a> PokemonRoster.t -><br>       <a href="Pokemon.html#TYPEt">Pokemon.t</a> -> <a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a> PokemonRoster.t</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">make_roster pknd curr p</code> is a <code class="code">PokemonRoster</code> with <code class="code">pknd</code> elements where
+   <code class="code">curr</code> is an accumulator for the roster. <code class="code">p</code> is a set of valid pokemon used 
+   to populate the <code class="code">PokemonRoster</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALcreate_roster"><span class="keyword">val</span> create_roster</span> : <code class="type"><a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a> -><br>       <a href="Gameworld.html#TYPEgame">Gameworld.game</a> -> <a href="Pokemon.html#TYPEt">Pokemon.t</a> -> <a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a> PokemonRoster.t</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">create_roster fst g p</code> is a <code class="code">PokemonRoster</code> whose length is specified in
+   game <code class="code">g</code> and which contains the pokemon <code class="code">fst</code>. <code class="code">p</code> is a set of valid pokemon 
+   used to populate the <code class="code">PokemonRoster</code> .</p>
+</div>
+</div>
+
+<pre><code><span id="TYPEt"><span class="keyword">type</span> <code class="type"></code>t</span> = {</code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.roster">roster</span>&nbsp;: <code class="type"><a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a> PokemonRoster.t</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.my_pokemon">my_pokemon</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.current_room">current_room</span>&nbsp;: <code class="type"><a href="Gameworld.html#TYPEroom">Gameworld.room</a></code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.defeated_characters">defeated_characters</span>&nbsp;: <code class="type">string list</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.visited_rooms">visited_rooms</span>&nbsp;: <code class="type"><a href="Gameworld.html#TYPEroom">Gameworld.room</a> list</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.player_name">player_name</span>&nbsp;: <code class="type">string</code>;</code></td>
+
+</tr></table>
+}
+
+<div class="info ">
+<div class="info-desc">
+<p>The abstract type of values representing the game state.</p>
+</div>
+</div>
+
+
+<pre><span id="VALinit_state"><span class="keyword">val</span> init_state</span> : <code class="type"><a href="Gameworld.html#TYPEgame">Gameworld.game</a> -> <a href="Pokemon.html#TYPEt">Pokemon.t</a> -> string -> string -> <a href="State.html#TYPEt">t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">init_state g p poke player</code> is the initial state of the game <code class="code">g</code>
+    with starting pokemon <code class="code">poke</code> and a player named <code class="code">player</code>. The set of valid
+     pokemon in this game are <code class="code">p</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALplayer_name"><span class="keyword">val</span> player_name</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">player_name t</code> is the current name of the player in state <code class="code">t</code></p>
+</div>
+</div>
+
+<pre><span id="VALcurrent_room"><span class="keyword">val</span> current_room</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> <a href="Gameworld.html#TYPEroom">Gameworld.room</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">current_room t</code> is the current room of the player in state <code class="code">t</code></p>
+</div>
+</div>
+
+<pre><span id="VALcurr_pokemon"><span class="keyword">val</span> curr_pokemon</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> <a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">curr_pokemon t</code> is the pokemon of the player in state <code class="code">t</code></p>
+</div>
+</div>
+
+<pre><span id="VALvisited_rooms"><span class="keyword">val</span> visited_rooms</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> <a href="Gameworld.html#TYPEroom">Gameworld.room</a> list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">visited_room st</code> is the visited rooms in the state <code class="code">st</code></p>
+</div>
+</div>
+
+<pre><code><span id="TYPEresult"><span class="keyword">type</span> <code class="type"></code>result</span> = </code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTresult.Legal"><span class="constructor">Legal</span></span> <span class="keyword">of</span> <code class="type"><a href="State.html#TYPEt">t</a></code></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTresult.Illegal"><span class="constructor">Illegal</span></span></code></td>
+
+</tr></table>
+
+<div class="info ">
+<div class="info-desc">
+<p>The type representing the resulting state of an attempted movement.</p>
+</div>
+</div>
+
+
+<pre><span id="VALchars_left"><span class="keyword">val</span> chars_left</span> : <code class="type"><a href="Gameworld.html#TYPEgame">Gameworld.game</a> -> <a href="State.html#TYPEt">t</a> -> string list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">chars_left g st</code> is the list of non-elite character in game <code class="code">g</code> which
+    still have to be defeated in state <code class="code">st</code></p>
+</div>
+</div>
+
+<pre><span id="VALchars_remaining"><span class="keyword">val</span> chars_remaining</span> : <code class="type"><a href="Gameworld.html#TYPEgame">Gameworld.game</a> -> <a href="State.html#TYPEt">t</a> -> (string * string) list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">chars_remaining g st</code> is a list of tuples of non-elite character 
+   which still have to be defeated in state <code class="code">st</code> and the rooms their in, in
+    game <code class="code">g</code></p>
+</div>
+</div>
+
+<pre><span id="VALstringify_opps"><span class="keyword">val</span> stringify_opps</span> : <code class="type"><a href="Gameworld.html#TYPEgame">Gameworld.game</a> -> <a href="State.html#TYPEt">t</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">stringify_opps g st</code> is a string containing the non-elite trainers left 
+    unbeaten in <code class="code">st</code> and the rooms they are in in game <code class="code">g</code></p>
+</div>
+</div>
+
+<pre><span id="VALopps_left"><span class="keyword">val</span> opps_left</span> : <code class="type">'a -> <a href="State.html#TYPEt">t</a> -> string list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">opps_left g st</code> is the list of characters in the current room in state 
+    <code class="code">st</code> within game <code class="code">g</code> which haven't been defeated.</p>
+</div>
+</div>
+
+<pre><span id="VALgo"><span class="keyword">val</span> go</span> : <code class="type">string -> <a href="Gameworld.html#TYPEgame">Gameworld.game</a> -> <a href="State.html#TYPEt">t</a> -> <a href="State.html#TYPEresult">result</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">go dir g st</code> is <code class="code">r</code> if attempting to go in the direction <code class="code">dir</code> in state 
+    <code class="code">st</code> and game <code class="code">g</code> results in <code class="code">r</code> where in <code class="code">st'</code> the 
+    player is now located in the room to which <code class="code">dir</code> leads unless the <code class="code">dir</code>
+     is a dead end. If the room which the player is about to enter contains an 
+     elite 3 member and the player has beaten all characters excluding the 
+     elite 3 then <code class="code">r</code> is <code class="code">Legal st'</code> else it is <code class="code">Illegal</code>, 
+     Raises: DeadEnd if <code class="code">dir</code> leads to a deadend.</p>
+</div>
+</div>
+
+<pre><span id="VALdefeated_char"><span class="keyword">val</span> defeated_char</span> : <code class="type">string -> <a href="State.html#TYPEt">t</a> -> <a href="State.html#TYPEt">t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">defeated_char st s</code> is a state with the defeated character <code class="code">s</code> added 
+    to the player's defeated characters in state <code class="code">st</code></p>
+</div>
+</div>
+
+<pre><span id="VALgame_over"><span class="keyword">val</span> game_over</span> : <code class="type"><a href="Gameworld.html#TYPEgame">Gameworld.game</a> -> <a href="State.html#TYPEt">t</a> -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">game_over g st</code> is true iff the user in state <code class="code">st</code> has won the game 
+   <code class="code">g</code> ie. defeated the elite 3.</p>
+</div>
+</div>
+
+<pre><span id="VALupdate_pokemon"><span class="keyword">val</span> update_pokemon</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> <a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a> -> <a href="State.html#TYPEt">t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">update_pokemon st p</code> is a state with the player's pokemon in state 
+    <code class="code">st</code> updated to be pokemon <code class="code">p</code></p>
+</div>
+</div>
+
+<pre><span id="VALstring_roster"><span class="keyword">val</span> string_roster</span> : <code class="type">(string * <a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a>) list -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">string_roster a</code> is a human-readble string which contains the 
+    hp and xp of all pokemons in the list <code class="code">a</code></p>
+</div>
+</div>
+
+<pre><span id="VALstats_string"><span class="keyword">val</span> stats_string</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">stats_string st</code> is a human-readble string which contains the hp and 
+   xp of all pokemon in the player's current roster</p>
+</div>
+</div>
+
+<pre><span id="VALalive_pokemon"><span class="keyword">val</span> alive_pokemon</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> (PokemonRoster.key * <a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a>) list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">alive_pokemon st</code> is a assosciation list of the pokemon alive in 
+    state <code class="code">st</code></p>
+</div>
+</div>
+
+<pre><span id="VALalive_string"><span class="keyword">val</span> alive_string</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">alive_string st</code> is a human-readble string which contains the hp and
+   xp of all living pokemon</p>
+</div>
+</div>
+
+<pre><span id="VALin_alive"><span class="keyword">val</span> in_alive</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> PokemonRoster.key -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">in_alive st s</code> is true iff pokemon named <code class="code">s</code> is in this state's <code class="code">st</code> 
+   current roster and is alive.</p>
+</div>
+</div>
+
+<pre><span id="VALswitch_poke"><span class="keyword">val</span> switch_poke</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> string -> <a href="State.html#TYPEt">t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">switch_poke st p</code> is a state with the player's current pokemon in state 
+    <code class="code">st</code> updated to be pokemon <code class="code">p</code></p>
+</div>
+</div>
+
+<pre><span id="VALpokemon_left"><span class="keyword">val</span> pokemon_left</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">pokemon_left st</code> is true iff there is a pokemon alive in the roster in
+   state <code class="code">st</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALlvlpkmn"><span class="keyword">val</span> lvlpkmn</span> : <code class="type">int -> <a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a> -> <a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">lvlpkmn int pkmn</code> levels up pokemon <code class="code">pkmn</code>,  <code class="code">int</code> times</p>
+</div>
+</div>
+
+<pre><span id="VALwild_pokemon"><span class="keyword">val</span> wild_pokemon</span> : <code class="type">int -> <a href="Pokemon.html#TYPEt">Pokemon.t</a> -> <a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a> option</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">wild_pokemon l p</code> returns a random pokemon option from the set of pokemon
+   <code class="code">p</code> levelled up <code class="code">l</code> times.</p>
+</div>
+</div>
+
+<pre><span id="VALtry_to_heal"><span class="keyword">val</span> try_to_heal</span> : <code class="type"><a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a> -> <a href="State.html#TYPEt">t</a> -> <a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a> option</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">try_to_heal p st</code> returns pokemon <code class="code">p</code> in the roster <code class="code">st</code> with increased hp 
+   as an option if it is one of the player's pokemon in state <code class="code">st</code> or None if 
+   the player does not have that pokemon.</p>
+</div>
+</div>
+
+<pre><span id="VALupdate_roster"><span class="keyword">val</span> update_roster</span> : <code class="type"><a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a> -> <a href="State.html#TYPEt">t</a> -> <a href="State.html#TYPEt">t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">update_roster p st</code> replaces pokemon <code class="code">p</code> in the player's roster in <code class="code">st</code>.</p>
+</div>
+</div>
+</body></html>

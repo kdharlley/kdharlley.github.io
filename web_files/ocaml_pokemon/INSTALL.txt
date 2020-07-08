@@ -1,0 +1,9 @@
+Install Instructions:
+-Download the zip folder.
+-Run make play in terminal from install folder.
+-Load game file "game1.json" or "NSEW.json".
+-Select from poketypes Fire, Water, Grass, Flying, Fighting, Poison, Electric, and Ice.
+-Select pokemon from generated list.
+-Possible commands are Go, Quit, Battle, Run, Observe, Challenge,
+  Stats, Switch, Search, Heal, Opps, and Rules. (Detailed information about
+  gameplay viewable with command rules)

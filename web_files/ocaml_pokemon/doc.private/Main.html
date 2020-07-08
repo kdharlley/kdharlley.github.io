@@ -1,0 +1,221 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="previous" href="State.html">
+<link rel="next" href="Author.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Pokemon" rel="Chapter" href="Pokemon.html">
+<link title="Command" rel="Chapter" href="Command.html">
+<link title="State" rel="Chapter" href="State.html">
+<link title="Main" rel="Chapter" href="Main.html">
+<link title="Author" rel="Chapter" href="Author.html">
+<link title="Attacks" rel="Chapter" href="Attacks.html">
+<link title="Gameworld" rel="Chapter" href="Gameworld.html">
+<link title="Types" rel="Chapter" href="Types.html"><title>Main</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="State.html" title="State">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;<a class="post" href="Author.html" title="Author">Next</a>
+</div>
+<h1>Module <a href="type_Main.html">Main</a></h1>
+
+<pre><span id="MODULEMain"><span class="keyword">module</span> Main</span>: <code class="code">sig</code> <a href="Main.html">..</a> <code class="code">end</code></pre><div class="info module top">
+<div class="info-desc">
+<p>The main entry point for the game interface.</p>
+</div>
+</div>
+<hr width="100%">
+
+<pre><span id="VALrules_msg"><span class="keyword">val</span> rules_msg</span> : <code class="type">string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">rules_msg</code> is a string representing the rules of the game.</p>
+</div>
+</div>
+
+<pre><span id="VALextract_state"><span class="keyword">val</span> extract_state</span> : <code class="type"><a href="State.html#TYPEt">State.t</a> -> <a href="State.html#TYPEresult">State.result</a> -> <a href="State.html#TYPEt">State.t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">extract_state curr_st new_st</code> is the state represented by the 
+    result <code class="code">new_st</code>, with <code class="code">curr_st</code> being the previous state.
+    If <code class="code">new_st</code> is <code class="code">Illegal</code> <code class="code">curr_st</code> is returned</p>
+</div>
+</div>
+
+<pre><span id="VALscale_lvl"><span class="keyword">val</span> scale_lvl</span> : <code class="type"><a href="State.html#TYPEt">State.t</a> -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">scale_lvl st</code> is a pseudo-random integer scaled to be relatively and 
+    randomly less than the current pokemon's level in <code class="code">st</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALprcs_sens"><span class="keyword">val</span> prcs_sens</span> : <code class="type">string -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">prcs_lvl s</code> returns the input string <code class="code">s</code> with the first letter of each
+    word capitalized, the remaining letters lowercase, and only one space in
+    between words</p>
+</div>
+</div>
+
+<pre><span id="VALscale_lvl_trainer"><span class="keyword">val</span> scale_lvl_trainer</span> : <code class="type"><a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a> -> <a href="State.html#TYPEt">State.t</a> -> <a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">scale_lvl_trainer pkm st</code> is pokemon <code class="code">pkm</code> levelled up a number of times.
+    The number of times <code class="code">pkm</code> is levelled up is based on the current pokemon's 
+    level in <code class="code">st</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALinput_player_name"><span class="keyword">val</span> input_player_name</span> : <code class="type">unit -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">input_player_name ()</code> reads and returns the user's inputted name.</p>
+</div>
+</div>
+
+<pre><span id="VALchoose_character"><span class="keyword">val</span> choose_character</span> : <code class="type">string -> <a href="Pokemon.html#TYPEt">Pokemon.t</a> -> <a href="State.html#TYPEt">State.t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">choose_character f pokedex</code> lets the player choose their character and 
+    pokemon in the game represented by file <code class="code">f</code> and creates an initial state 
+    with that character. <code class="code">pokedex</code> is a set of valid pokemon</p>
+</div>
+</div>
+
+<pre><span id="VALselect_pokemon"><span class="keyword">val</span> select_pokemon</span> : <code class="type">string -> <a href="Pokemon.html#TYPEt">Pokemon.t</a> -> <a href="Gameworld.html#TYPEgame">Gameworld.game</a> -> string list -> string -> <a href="State.html#TYPEt">State.t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">select_pokemon f pokedex game t player</code> lets the player <code class="code">player</code> pick a 
+    pokemon from a list of pokemon <code class="code">t</code> in the game <code class="code">g</code> represented by file <code class="code">f</code>
+     and creates an initial state with that character. <code class="code">pokedex</code> is a set of 
+     valud pokemon.</p>
+</div>
+</div>
+
+<pre><span id="VALeval_loop"><span class="keyword">val</span> eval_loop</span> : <code class="type"><a href="Gameworld.html#TYPEgame">Gameworld.game</a> -> <a href="Pokemon.html#TYPEt">Pokemon.t</a> -> <a href="Attacks.html#TYPEt">Attacks.t</a> -> <a href="State.html#TYPEt">State.t</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">eval_loop game pkdex atdir st</code> prompts the user to enter a command, then
+    parses that command, matching it with the correct command evaluation branch
+    and continuing the game <code class="code">game</code> whiles potentially updating values in <code class="code">st</code>, 
+    or matches improper commands with descriptive error messages which then 
+    prompt the user to enter a better command. <code class="code">pkdex</code> is a set of valid
+     pokemon and <code class="code">atdir</code> is a set of valid attacks.</p>
+</div>
+</div>
+
+<pre><span id="VALgo_cmd"><span class="keyword">val</span> go_cmd</span> : <code class="type"><a href="Gameworld.html#TYPEgame">Gameworld.game</a> -><br>       <a href="Pokemon.html#TYPEt">Pokemon.t</a> -> <a href="Attacks.html#TYPEt">Attacks.t</a> -> <a href="State.html#TYPEt">State.t</a> -> <a href="Command.html#TYPEobject_phrase">Command.object_phrase</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">go_cmd game pkdex atdir st s</code> updates the state <code class="code">st</code> if moving in the 
+    direction <code class="code">s</code> in game <code class="code">game</code> leads to a valid state. If not, appropiate 
+    error messages are printed. <code class="code">pkdex</code> is a set of valid pokemon
+    and <code class="code">atdir</code> is a set of valid attacks.</p>
+</div>
+</div>
+
+<pre><span id="VALheal_cmd"><span class="keyword">val</span> heal_cmd</span> : <code class="type"><a href="Gameworld.html#TYPEgame">Gameworld.game</a> -><br>       <a href="Pokemon.html#TYPEt">Pokemon.t</a> -><br>       <a href="Attacks.html#TYPEt">Attacks.t</a> -> <a href="State.html#TYPEt">State.t</a> -> <a href="Command.html#TYPEobject_phrase">Command.object_phrase</a> -> <a href="Gameworld.html#TYPEroom">Gameworld.room</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">heal_cmd game pkdex atdir st p curr_room</code> if the <code class="code">curr_room</code> has a pokemon 
+    center,  the state <code class="code">st</code> is updated with a healed pokemon <code class="code">p</code>. Otherwise, 
+    appropiate error messages are printed. <code class="code">pkdex</code> is a set of valid pokemon
+    and <code class="code">atdir</code> is a set of valid attacks.</p>
+</div>
+</div>
+
+<pre><span id="VALnew_pokemon"><span class="keyword">val</span> new_pokemon</span> : <code class="type"><a href="Gameworld.html#TYPEgame">Gameworld.game</a> -> <a href="State.html#TYPEt">State.t</a> -> <a href="State.html#TYPEt">State.t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">new_pokemon game st</code> prompts the user to select a new pokemon from their
+    roster in game<code class="code">game</code>, updates the game state <code class="code">st</code> with their selection, 
+    and returns this new state.</p>
+</div>
+</div>
+
+<pre><span id="VALprint_battle_effects"><span class="keyword">val</span> print_battle_effects</span> : <code class="type"><a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a> -> <a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a> -> string -> string -> string -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">print_battle_effects pk1 new_pk2 pk1_name pk2_name attack_s</code> prints an
+    organized battle summary for the user after <code class="code">pk1</code> with name <code class="code">pk1_name</code>
+    attacks <code class="code">new_pk2</code> with name <code class="code">pk2_name</code> with <code class="code">attack_s</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALai_battle_action"><span class="keyword">val</span> ai_battle_action</span> : <code class="type"><a href="Gameworld.html#TYPEgame">Gameworld.game</a> -><br>       <a href="Pokemon.html#TYPEt">Pokemon.t</a> -><br>       <a href="Attacks.html#TYPEt">Attacks.t</a> -><br>       <a href="State.html#TYPEt">State.t</a> -><br>       <a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a> -><br>       <a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a> -> string -> bool * <a href="State.html#TYPEt">State.t</a> * <a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">ai_battle_action game pkdex atdir st ai_pk pk2 char_name</code> is a tuple
+      containing whether the player's pokemon <code class="code">pk2</code> is dead after being 
+      attacked by <code class="code">char_name</code>'s pokemon <code class="code">ai_pk</code> in state <code class="code">st</code>, the new state
+      after damage has been dealt to <code class="code">pk2</code> and the new pokemon <code class="code">pk2</code> after
+       damage has been dealt to it. <code class="code">pkdex</code> is a set of valid pokemon and
+        <code class="code">atdir</code> is a set of valid attacks in game <code class="code">game</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALbattle_action"><span class="keyword">val</span> battle_action</span> : <code class="type"><a href="Gameworld.html#TYPEgame">Gameworld.game</a> -><br>       <a href="Pokemon.html#TYPEt">Pokemon.t</a> -><br>       <a href="Attacks.html#TYPEt">Attacks.t</a> -><br>       <a href="State.html#TYPEt">State.t</a> -><br>       <a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a> -><br>       <a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a> -> string -> string -> bool * <a href="State.html#TYPEt">State.t</a> * <a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">battle_action game pkdex atdir st pk1 pk2 atk_s char_name</code> is a tuple
+    containing whether <code class="code">char_name</code>'s pokemon <code class="code">pk2</code> is dead after being attacked 
+    by <code class="code">pk1</code> in state <code class="code">st</code> with attack <code class="code">atk_s</code>, the new state after 
+    damage has been dealt to <code class="code">pk2</code> and the new pokemon <code class="code">pk2</code> after damage has 
+    been dealt to it. <code class="code">pkdex</code> is a set of valid pokemon and <code class="code">atdir</code> is a set of
+     valid attacks in game <code class="code">game</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALbattle_processing"><span class="keyword">val</span> battle_processing</span> : <code class="type"><a href="Gameworld.html#TYPEgame">Gameworld.game</a> -><br>       <a href="Pokemon.html#TYPEt">Pokemon.t</a> -><br>       <a href="Attacks.html#TYPEt">Attacks.t</a> -><br>       <a href="State.html#TYPEt">State.t</a> -><br>       <a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a> -> <a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a> -> bool -> string -> string list -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">battle_processing game pkdex atdir st pk1 pk2 battle_start char_name atks</code>
+    allows a user to pick one of the player's current pokemon <code class="code">pk1</code> moves 
+    <code class="code">atks</code> in state <code class="code">st</code>. If the move is valid, <code class="code">pk1</code> attacks <code class="code">char_name</code>'s 
+    <code class="code">pk2</code> with it after which <code class="code">pk2</code> attacks <code class="code">pk1</code> with one of its own attacks
+    , else an error message is printed. <code class="code">battle_start</code> contains whether this
+     is the first battle phase, <code class="code">pkdex</code> is a set of valid pokemon and <code class="code">atdir</code> 
+     is a set of valid attacks in game <code class="code">game</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALai_battle"><span class="keyword">val</span> ai_battle</span> : <code class="type"><a href="Gameworld.html#TYPEgame">Gameworld.game</a> -><br>       <a href="Pokemon.html#TYPEt">Pokemon.t</a> -><br>       <a href="Attacks.html#TYPEt">Attacks.t</a> -><br>       <a href="State.html#TYPEt">State.t</a> -><br>       <a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a> -><br>       <a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a> -><br>       bool -> string -> string list -> bool * <a href="State.html#TYPEt">State.t</a> * <a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">ai_battle game pkdex atdir st pk1 pk2 battle_start char_name atks</code> 
+    processes  <code class="code">char_name</code>'s pokemon <code class="code">pk2</code> battling <code class="code">pk1</code> with
+    <code class="code">new_st_opt</code> containing modified state data from <code class="code">pk1</code> battling <code class="code">pk2</code>.  
+    <code class="code">st</code> is the previous state, <code class="code">battle_start</code> contains whether this
+     is the first battle phase, <code class="code">pkdex</code> is a set of valid pokemon and <code class="code">atdir</code> 
+     is a set of valid attacks in game <code class="code">game</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALbattle_loop"><span class="keyword">val</span> battle_loop</span> : <code class="type"><a href="Gameworld.html#TYPEgame">Gameworld.game</a> -><br>       <a href="Pokemon.html#TYPEt">Pokemon.t</a> -><br>       <a href="Attacks.html#TYPEt">Attacks.t</a> -><br>       <a href="State.html#TYPEt">State.t</a> -> <a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a> -> <a href="Pokemon.html#TYPEpokemon">Pokemon.pokemon</a> -> bool -> string -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">battle_loop game pkdex atdir st pk1 pk2 battle_start char_name</code> prompts 
+    the user to enter a command, then parses that command, matching it with the 
+    correct command evaluation branch and continuing the <code class="code">game</code> whiles 
+    potentially updating values in <code class="code">st</code>, <code class="code">pk1</code> and <code class="code">pk2</code> , or matches improper 
+    commands with descriptive error messages which then prompt the user to 
+    enter a better command.  <code class="code">battle_start</code> contains whether this is the first 
+    battle phase, <code class="code">char_name</code> is the ai opponent, <code class="code">pkdex</code> is a set of valid
+     pokemon and <code class="code">atdir</code> is a set of valid attacks.</p>
+</div>
+</div>
+
+<pre><span id="VALplay_game"><span class="keyword">val</span> play_game</span> : <code class="type">string -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">play_game f</code> starts the game in file <code class="code">f</code>.
+    Prints an error message if <code class="code">f</code> is an invalid file and then prompts for a
+    valid file to start</p>
+</div>
+</div>
+
+<pre><span id="VALcharacters"><span class="keyword">val</span> characters</span> : <code class="type">string list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">characters</code> creates an empty string list of characters</p>
+</div>
+</div>
+
+<pre><span id="VALmain"><span class="keyword">val</span> main</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">main ()</code> starts the game and prompts the user to enter a game file to 
+    load</p>
+</div>
+</div>
+</body></html>

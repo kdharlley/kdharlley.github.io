@@ -1,0 +1,604 @@
+[
+  {
+    "id": 1,
+    "name": "Bulbasaur",
+    "description": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.",
+    "type": "Grass",
+    "base": {
+      "HP": 45,
+      "Attack": 49,
+      "Defense": 49,
+      "Sp. Attack": 65,
+      "Sp. Defense": 65,
+      "Speed": 45
+    },
+    "attacks": [
+      "Vine Whip",
+      "Quick Attack",
+      "Stomp"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Ivysaur",
+    "description": "There is a bud on this Pokémon's back. To support its weight, Ivysaur's legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it's a sign that the bud will bloom into a large flower soon.",
+    "type": "Grass",
+    "base": {
+      "HP": 60,
+      "Attack": 62,
+      "Defense": 63,
+      "Sp. Attack": 80,
+      "Sp. Defense": 80,
+      "Speed": 60
+    },
+    "attacks": [
+      "Vine Whip",
+      "Twineedle",
+      "Mega Drain"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Venusaur",
+    "description": "There is a large flower on Venusaur's back. The flower is said to take on vivid colors if it gets plenty of nutrition and sunlight. The flower's aroma soothes the emotions of people.",
+    "type": "Grass",
+    "base": {
+      "HP": 80,
+      "Attack": 82,
+      "Defense": 83,
+      "Sp. Attack": 100,
+      "Sp. Defense": 100,
+      "Speed": 80
+    },
+    "attacks": [
+      "Acid",
+      "Sludge Bomb",
+      "Leaf Storm",
+      "Earthquake"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Charmander",
+    "description": "The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is enjoying itself. If the Pokémon becomes enraged, the flame burns fiercely.",
+    "type": "Fire",
+    "base": {
+      "HP": 39,
+      "Attack": 52,
+      "Defense": 43,
+      "Sp. Attack": 60,
+      "Sp. Defense": 50,
+      "Speed": 65
+    },
+    "attacks": [
+      "Ember",
+      "Flame Charge",
+      "Sunny Day"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Charmeleon",
+    "description": "Charmeleon mercilessly destroys its foes using its sharp claws. If it encounters a strong foe, it turns aggressive. In this excited state, the flame at the tip of its tail flares with a bluish white color.",
+    "type": "Fire",
+    "base": {
+      "HP": 58,
+      "Attack": 64,
+      "Defense": 58,
+      "Sp. Attack": 80,
+      "Sp. Defense": 65,
+      "Speed": 80
+    },
+    "attacks": [
+      "Ember",
+      "Double Kick",
+      "Flame Charge",
+      "Stomp",
+      "Rage"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Charizard",
+    "description": "Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself.",
+    "type": "Flying",
+    "base": {
+      "HP": 78,
+      "Attack": 84,
+      "Defense": 78,
+      "Sp. Attack": 109,
+      "Sp. Defense": 85,
+      "Speed": 100
+    },
+    "attacks": [
+      "Flamethrower",
+      "Flame Charge",
+      "Aerial Ace",
+      "Double Kick"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Squirtle",
+    "description": "squirtle squad",
+    "type": "Water",
+    "base": {
+      "HP": 43,
+      "Attack": 86,
+      "Defense": 58,
+      "Sp. Attack": 64,
+      "Sp. Defense": 25,
+      "Speed": 58
+    },
+    "attacks": [
+      "Water Gun",
+      "Quick Attack",
+      "Bubble"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Wartortle",
+    "description": "Wartorle stomps around... He's like squirtle, but bigger!",
+    "type": "Water",
+    "base": {
+      "HP": 46,
+      "Attack": 79,
+      "Defense": 68,
+      "Sp. Attack": 49,
+      "Sp. Defense": 85,
+      "Speed": 107
+    },
+    "attacks": [
+      "Stomp",
+      "Hydro Pump",
+      "Surf",
+      "Scratch"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Pidgey",
+    "description": "Pidgey hops around the grass. His tan feather glisten in the sun.",
+    "type": "Normal",
+    "base": {
+      "HP": 89,
+      "Attack": 84,
+      "Defense": 78,
+      "Sp. Attack": 34,
+      "Sp. Defense": 85,
+      "Speed": 100
+    },
+    "attacks": [
+      "Tackle",
+      "Gust",
+      "Aerial Ace"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Girafarig",
+    "description": "Girafarig stands in the grass. ",
+    "type": "Normal",
+    "base": {
+      "HP": 91,
+      "Attack": 84,
+      "Defense": 78,
+      "Sp. Attack": 78,
+      "Sp. Defense": 85,
+      "Speed": 100
+    },
+    "attacks": [
+      "Tackle",
+      "Growl",
+      "Sunny Day"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Tauros",
+    "description": "Tauros's tails flow in the wind facing the sky, he grunts.",
+    "type": "Normal",
+    "base": {
+      "HP": 75,
+      "Attack": 100,
+      "Defense": 95,
+      "Sp. Attack": 40,
+      "Sp. Defense": 70,
+      "Speed": 110
+    },
+    "attacks": [
+      "Tackle",
+      "Tail Whip",
+      "Rage"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Psyduck",
+    "description": "Psyduck sticks his web hands above his head. His eyes look hypnotic.",
+    "type": "Water",
+    "base": {
+      "HP": 50,
+      "Attack": 52,
+      "Defense": 48,
+      "Sp. Attack": 65,
+      "Sp. Defense": 50,
+      "Speed": 55
+    },
+    "attacks": [
+      "Tail Whip",
+      "Water Gun",
+      "Scratch"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Horsea",
+    "description": "Horsea makes a splash.",
+    "type": "Water",
+    "base": {
+      "HP": 30,
+      "Attack": 40,
+      "Defense": 70,
+      "Sp. Attack": 70,
+      "Sp. Defense": 25,
+      "Speed": 60
+    },
+    "attacks": [
+      "Bubble",
+      "Water Gun",
+      "Focus Energy"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Ekans",
+    "description": "Ekans slithers past you. He hisses.",
+    "type": "Poison",
+    "base": {
+      "HP": 35,
+      "Attack": 60,
+      "Defense": 44,
+      "Sp. Attack": 40,
+      "Sp. Defense": 54,
+      "Speed": 55
+    },
+    "attacks": [
+      "Poison Sting",
+      "Acid",
+      "Bite"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Nidoran",
+    "description": "Nidoran stomps.",
+    "type": "Poison",
+    "base": {
+      "HP": 55,
+      "Attack": 47,
+      "Defense": 52,
+      "Sp. Attack": 40,
+      "Sp. Defense": 40,
+      "Speed": 41
+    },
+    "attacks": [
+      "Growl",
+      "Scratch",
+      "Tail Whip",
+      "Poison Sting"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Venomoth",
+    "description": "Venomoth hovers by your side.  He flaps his wings.",
+    "type": "Poison",
+    "base": {
+      "HP": 70,
+      "Attack": 65,
+      "Defense": 60,
+      "Sp. Attack": 90,
+      "Sp. Defense": 75,
+      "Speed": 90
+    },
+    "attacks": [
+      "Screech",
+      "Tackle",
+      "Gust"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Ponyta",
+    "description": "Ponyta runs around, despite her firey hair, you don't feel any harsh heat",
+    "type": "Fire",
+    "base": {
+      "HP": 50,
+      "Attack": 85,
+      "Defense": 55,
+      "Sp. Attack": 65,
+      "Sp. Defense": 65,
+      "Speed": 90
+    },
+    "attacks": [
+      "Tackle",
+      "Growl",
+      "Ember",
+      "Tail Whip",
+      "Flame Charge"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Cyndaquil",
+    "description": "Cyndaquil ",
+    "type": "Fire",
+    "base": {
+      "HP": 39,
+      "Attack": 52,
+      "Defense": 43,
+      "Sp. Attack": 60,
+      "Sp. Defense": 50,
+      "Speed": 65
+    },
+    "attacks": [
+      "Tackle",
+      "Ember",
+      "Quick Attack",
+      "Sunny Day"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Heatmor",
+    "description": "Heatmor looks weird, he has fire coming out of his nose. ",
+    "type": "Fire",
+    "base": {
+      "HP": 85,
+      "Attack": 97,
+      "Defense": 66,
+      "Sp. Attack": 105,
+      "Sp. Defense": 66,
+      "Speed": 65
+    },
+    "attacks": [
+      "Tackle",
+      "Ember",
+      "Incinerate"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Spearow",
+    "description": "Spearow is hoppin around doing his thing.",
+    "type": "Flying",
+    "base": {
+      "HP": 40,
+      "Attack": 60,
+      "Defense": 30,
+      "Sp. Attack": 31,
+      "Sp. Defense": 31,
+      "Speed": 70
+    },
+    "attacks": [
+      "Growl",
+      "Focus Energy",
+      "Peck"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Articuno",
+    "description": "Articuno is a baby blue bird, he bellows blue bird blues.",
+    "type": "Ice",
+    "base": {
+      "HP": 90,
+      "Attack": 85,
+      "Defense": 100,
+      "Sp. Attack": 95,
+      "Sp. Defense": 125,
+      "Speed": 85
+    },
+    "attacks": [
+      "Ice Beam",
+      "Gust",
+      "Ice Shard"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Zubat",
+    "description": "Zubat screams as she flies through the air.",
+    "type": "Flying",
+    "base": {
+      "HP": 40,
+      "Attack": 45,
+      "Defense": 35,
+      "Sp. Attack": 30,
+      "Sp. Defense": 40,
+      "Speed": 55
+    },
+    "attacks": [
+      "Bite",
+      "Wing Attack",
+      "Poison Sting"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Jumpluff",
+    "description": "Jumpluff looks like a little cotton plant",
+    "type": "Grass",
+    "base": {
+      "HP": 75,
+      "Attack": 55,
+      "Defense": 70,
+      "Sp. Attack": 55,
+      "Sp. Defense": 95,
+      "Speed": 110
+    },
+    "attacks": [
+      "Tackle",
+      "Tail Whip",
+      "Sunny Day"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Makuhita",
+    "description": "Makuhita stomps around like a wrestler and takes steroids",
+    "type": "Fighting",
+    "base": {
+      "HP": 72,
+      "Attack": 60,
+      "Defense": 30,
+      "Sp. Attack": 20,
+      "Sp. Defense": 30,
+      "Speed": 25
+    },
+    "attacks": [
+      "Tackle",
+      "Focus Energy",
+      "Arm Thrust"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Mankey",
+    "description": "Mankey snorts and jumps over you! woah!",
+    "type": "Fighting",
+    "base": {
+      "HP": 40,
+      "Attack": 80,
+      "Defense": 35,
+      "Sp. Attack": 35,
+      "Sp. Defense": 45,
+      "Speed": 70
+    },
+    "attacks": [
+      "Scratch",
+      "Focus Energy",
+      "Screech",
+      "Seismic Toss"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Machamp",
+    "description": "Machamp is clapping vertically (his right two and left two, yaknow?)",
+    "type": "Fighting",
+    "base": {
+      "HP": 90,
+      "Attack": 130,
+      "Defense": 80,
+      "Sp. Attack": 65,
+      "Sp. Defense": 85,
+      "Speed": 55
+    },
+    "attacks": [
+      "Focus Energy",
+      "Seismic Toss",
+      "Mega Kick",
+      "Jump Kick"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Weepinbell",
+    "description": "Weepinbell (verbs) ((like a ghost))",
+    "type": "Grass",
+    "base": {
+      "HP": 65,
+      "Attack": 90,
+      "Defense": 55,
+      "Sp. Attack": 85,
+      "Sp. Defense": 45,
+      "Speed": 55
+    },
+    "attacks": [
+      "Vine Whip",
+      "Sunny Day",
+      "Poison Sting"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Pikachu",
+    "description": "Pikachu presents his aura of electricity, and keeps saying 'Pikachu'",
+    "type": "Electric",
+    "base": {
+      "HP": 45,
+      "Attack": 80,
+      "Defense": 50,
+      "Sp. Attack": 75,
+      "Sp. Defense": 60,
+      "Speed": 120
+    },
+    "attacks": [
+      "Growl",
+      "Thunderbolt",
+      "Quick Attack",
+      "Tail Whip",
+      "Mega Kick"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Electrabuzz",
+    "description": "Electrabuzz is goin around, zappin the homies",
+    "type": "Electric",
+    "base": {
+      "HP": 65,
+      "Attack": 83,
+      "Defense": 57,
+      "Sp. Attack": 95,
+      "Sp. Defense": 85,
+      "Speed": 105
+    },
+    "attacks": [
+      "Thunderbolt",
+      "Quick Attack",
+      "Seismic Toss",
+      "Thunder"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Alolan Graveler",
+    "description": "Graveler is doing 180s aross the grass with his arms.",
+    "type": "Electric",
+    "base": {
+      "HP": 55,
+      "Attack": 95,
+      "Defense": 115,
+      "Sp. Attack": 45,
+      "Sp. Defense": 45,
+      "Speed": 35
+    },
+    "attacks": [
+      "Tackle",
+      "Thunderbolt"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Arcanine",
+    "description": "Fire dog is chillin",
+    "type": "Fire",
+    "base": {
+      "HP": 70,
+      "Attack": 95,
+      "Defense": 115,
+      "Sp. Attack": 45,
+      "Sp. Defense": 55,
+      "Speed": 35
+    },
+    "attacks": [
+      "Growl",
+      "Flame Charge",
+      "Flamethrower"
+    ]
+  }
+]

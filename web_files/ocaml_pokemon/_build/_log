@@ -1,0 +1,60 @@
+### Starting build.
+# Target: main.mli.depends, tags: { package(ANSITerminal), package(oUnit), package(yojson), extension:mli, file:main.mli, ocaml, ocamldep, quiet, traverse }
+ocamlfind ocamldep -package oUnit -package yojson -package ANSITerminal -modules main.mli > main.mli.depends # cached
+# Target: main.cmi, tags: { package(ANSITerminal), package(oUnit), package(yojson), byte, compile, extension:mli, file:main.mli, interf, ocaml, quiet, traverse }
+ocamlfind ocamlc -c -package oUnit -package yojson -package ANSITerminal -o main.cmi main.mli # cached
+# Target: main.ml.depends, tags: { package(ANSITerminal), package(oUnit), package(yojson), extension:ml, file:main.ml, ocaml, ocamldep, quiet, traverse }
+ocamlfind ocamldep -package oUnit -package yojson -package ANSITerminal -modules main.ml > main.ml.depends # cached
+# Target: attacks.mli.depends, tags: { package(ANSITerminal), package(oUnit), package(yojson), extension:mli, file:attacks.mli, ocaml, ocamldep, quiet, traverse }
+ocamlfind ocamldep -package oUnit -package yojson -package ANSITerminal -modules attacks.mli > attacks.mli.depends # cached
+# Target: types.mli.depends, tags: { package(ANSITerminal), package(oUnit), package(yojson), extension:mli, file:types.mli, ocaml, ocamldep, quiet, traverse }
+ocamlfind ocamldep -package oUnit -package yojson -package ANSITerminal -modules types.mli > types.mli.depends # cached
+# Target: types.cmi, tags: { package(ANSITerminal), package(oUnit), package(yojson), byte, compile, extension:mli, file:types.mli, interf, ocaml, quiet, traverse }
+ocamlfind ocamlc -c -package oUnit -package yojson -package ANSITerminal -o types.cmi types.mli
+# Target: command.mli.depends, tags: { package(ANSITerminal), package(oUnit), package(yojson), extension:mli, file:command.mli, ocaml, ocamldep, quiet, traverse }
+ocamlfind ocamldep -package oUnit -package yojson -package ANSITerminal -modules command.mli > command.mli.depends # cached
+# Target: gameworld.mli.depends, tags: { package(ANSITerminal), package(oUnit), package(yojson), extension:mli, file:gameworld.mli, ocaml, ocamldep, quiet, traverse }
+ocamlfind ocamldep -package oUnit -package yojson -package ANSITerminal -modules gameworld.mli > gameworld.mli.depends # cached
+# Target: pokemon.mli.depends, tags: { package(ANSITerminal), package(oUnit), package(yojson), extension:mli, file:pokemon.mli, ocaml, ocamldep, quiet, traverse }
+ocamlfind ocamldep -package oUnit -package yojson -package ANSITerminal -modules pokemon.mli > pokemon.mli.depends # cached
+# Target: attacks.cmi, tags: { package(ANSITerminal), package(oUnit), package(yojson), byte, compile, extension:mli, file:attacks.mli, interf, ocaml, quiet, traverse }
+ocamlfind ocamlc -c -package oUnit -package yojson -package ANSITerminal -o attacks.cmi attacks.mli
+# Target: pokemon.cmi, tags: { package(ANSITerminal), package(oUnit), package(yojson), byte, compile, extension:mli, file:pokemon.mli, interf, ocaml, quiet, traverse }
+ocamlfind ocamlc -c -package oUnit -package yojson -package ANSITerminal -o pokemon.cmi pokemon.mli
+# Target: state.mli.depends, tags: { package(ANSITerminal), package(oUnit), package(yojson), extension:mli, file:state.mli, ocaml, ocamldep, quiet, traverse }
+ocamlfind ocamldep -package oUnit -package yojson -package ANSITerminal -modules state.mli > state.mli.depends # cached
+# Target: gameworld.cmi, tags: { package(ANSITerminal), package(oUnit), package(yojson), byte, compile, extension:mli, file:gameworld.mli, interf, ocaml, quiet, traverse }
+ocamlfind ocamlc -c -package oUnit -package yojson -package ANSITerminal -o gameworld.cmi gameworld.mli
+# Target: command.cmi, tags: { package(ANSITerminal), package(oUnit), package(yojson), byte, compile, extension:mli, file:command.mli, interf, ocaml, quiet, traverse }
+ocamlfind ocamlc -c -package oUnit -package yojson -package ANSITerminal -o command.cmi command.mli
+# Target: state.cmi, tags: { package(ANSITerminal), package(oUnit), package(yojson), byte, compile, extension:mli, file:state.mli, interf, ocaml, quiet, traverse }
+ocamlfind ocamlc -c -package oUnit -package yojson -package ANSITerminal -o state.cmi state.mli
+# Target: main.cmo, tags: { package(ANSITerminal), package(oUnit), package(yojson), byte, compile, extension:cmo, extension:ml, file:main.cmo, file:main.ml, implem, ocaml, quiet, traverse }
+ocamlfind ocamlc -c -package oUnit -package yojson -package ANSITerminal -o main.cmo main.ml # cached
+# Target: attacks.ml.depends, tags: { package(ANSITerminal), package(oUnit), package(yojson), extension:ml, file:attacks.ml, ocaml, ocamldep, quiet, traverse }
+ocamlfind ocamldep -package oUnit -package yojson -package ANSITerminal -modules attacks.ml > attacks.ml.depends # cached
+# Target: command.ml.depends, tags: { package(ANSITerminal), package(oUnit), package(yojson), extension:ml, file:command.ml, ocaml, ocamldep, quiet, traverse }
+ocamlfind ocamldep -package oUnit -package yojson -package ANSITerminal -modules command.ml > command.ml.depends # cached
+# Target: gameworld.ml.depends, tags: { package(ANSITerminal), package(oUnit), package(yojson), extension:ml, file:gameworld.ml, ocaml, ocamldep, quiet, traverse }
+ocamlfind ocamldep -package oUnit -package yojson -package ANSITerminal -modules gameworld.ml > gameworld.ml.depends # cached
+# Target: pokemon.ml.depends, tags: { package(ANSITerminal), package(oUnit), package(yojson), extension:ml, file:pokemon.ml, ocaml, ocamldep, quiet, traverse }
+ocamlfind ocamldep -package oUnit -package yojson -package ANSITerminal -modules pokemon.ml > pokemon.ml.depends # cached
+# Target: state.ml.depends, tags: { package(ANSITerminal), package(oUnit), package(yojson), extension:ml, file:state.ml, ocaml, ocamldep, quiet, traverse }
+ocamlfind ocamldep -package oUnit -package yojson -package ANSITerminal -modules state.ml > state.ml.depends # cached
+# Target: attacks.cmo, tags: { package(ANSITerminal), package(oUnit), package(yojson), byte, compile, extension:cmo, extension:ml, file:attacks.cmo, file:attacks.ml, implem, ocaml, quiet, traverse }
+ocamlfind ocamlc -c -package oUnit -package yojson -package ANSITerminal -o attacks.cmo attacks.ml
+# Target: command.cmo, tags: { package(ANSITerminal), package(oUnit), package(yojson), byte, compile, extension:cmo, extension:ml, file:command.cmo, file:command.ml, implem, ocaml, quiet, traverse }
+ocamlfind ocamlc -c -package oUnit -package yojson -package ANSITerminal -o command.cmo command.ml
+# Target: gameworld.cmo, tags: { package(ANSITerminal), package(oUnit), package(yojson), byte, compile, extension:cmo, extension:ml, file:gameworld.cmo, file:gameworld.ml, implem, ocaml, quiet, traverse }
+ocamlfind ocamlc -c -package oUnit -package yojson -package ANSITerminal -o gameworld.cmo gameworld.ml
+# Target: pokemon.cmo, tags: { package(ANSITerminal), package(oUnit), package(yojson), byte, compile, extension:cmo, extension:ml, file:pokemon.cmo, file:pokemon.ml, implem, ocaml, quiet, traverse }
+ocamlfind ocamlc -c -package oUnit -package yojson -package ANSITerminal -o pokemon.cmo pokemon.ml
+# Target: state.cmo, tags: { package(ANSITerminal), package(oUnit), package(yojson), byte, compile, extension:cmo, extension:ml, file:state.cmo, file:state.ml, implem, ocaml, quiet, traverse }
+ocamlfind ocamlc -c -package oUnit -package yojson -package ANSITerminal -o state.cmo state.ml
+# Target: types.ml.depends, tags: { package(ANSITerminal), package(oUnit), package(yojson), extension:ml, file:types.ml, ocaml, ocamldep, quiet, traverse }
+ocamlfind ocamldep -package oUnit -package yojson -package ANSITerminal -modules types.ml > types.ml.depends # cached
+# Target: types.cmo, tags: { package(ANSITerminal), package(oUnit), package(yojson), byte, compile, extension:cmo, extension:ml, file:types.cmo, file:types.ml, implem, ocaml, quiet, traverse }
+ocamlfind ocamlc -c -package oUnit -package yojson -package ANSITerminal -o types.cmo types.ml
+# Target: main.byte, tags: { package(ANSITerminal), package(oUnit), package(yojson), byte, dont_link_with, extension:byte, file:main.byte, link, ocaml, program, quiet, traverse }
+ocamlfind ocamlc -linkpkg -package oUnit -package yojson -package ANSITerminal types.cmo attacks.cmo command.cmo pokemon.cmo gameworld.cmo state.cmo main.cmo -o main.byte
+# Compilation successful.
